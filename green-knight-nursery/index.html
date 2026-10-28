@@ -1,0 +1,486 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Green Knight Nursery &amp; Landscaping · Kirkland, WA · We grow everything we sell</title>
+<meta name="description" content="Boutique nursery in Kirkland's Highlands growing Japanese maples, unique pines, Cedrus, fir, magnolia, dove trees, Hinoki cypress, hydrangeas, peonies and dahlias on site. Landscape design, wood boxes and wedding florals. Call ahead: (206) 550-3285.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#1D2A1F">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%231D2A1F'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='18' fill='%23E6E8DD' text-anchor='middle'%3EG%3C/text%3E%3C/svg%3E">
+
+<!-- ==== SWAP: Open Graph (absolute URLs set at deploy) ==== -->
+<meta property="og:title" content="Green Knight Nursery &amp; Landscaping · Kirkland">
+<meta property="og:description" content="We grow everything we sell. Japanese maples, conifers and flowering trees grown on site in Kirkland's Highlands.">
+<meta property="og:image" content="https://maneki-demos.pages.dev/green-knight-nursery/img/nursery-path.jpg">
+<meta property="og:url" content="https://maneki-demos.pages.dev/green-knight-nursery/">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..500;1,6..72,300..400&family=Hanken+Grotesk:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<!-- ==== SWAP: JSON-LD ==== -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "GardenStore",
+  "name": "Green Knight Nursery & Landscaping",
+  "description": "Boutique nursery in the heart of Kirkland. We grow everything we sell.",
+  "foundingDate": "1998",
+  "founder": { "@type": "Person", "name": "Scott Reusser" },
+  "telephone": "+1-206-550-3285",
+  "email": "peatmoss2000@aol.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "9625 Observation Dr",
+    "addressLocality": "Kirkland",
+    "addressRegion": "WA",
+    "postalCode": "98033",
+    "addressCountry": "US"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": 47.6877252, "longitude": -122.1885084 },
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Saturday"], "opens": "09:00", "closes": "20:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Friday", "opens": "08:00", "closes": "20:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "09:00", "closes": "17:00" }
+  ],
+  "sameAs": [
+    "https://www.instagram.com/greenknightnursery/",
+    "https://www.facebook.com/greenknightkirkalnd"
+  ],
+  "makesOffer": [
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Landscape design and installation" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Wedding and event florals" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Custom wood boxes and gift delivery" } }
+  ]
+}
+</script>
+
+<style>
+/* ==== SWAP: client tokens. Every color sampled from the client's own photos ==== */
+:root{
+  --hinoki:#1D2A1F;      /* deep conifer shade, nursery path photo */
+  --hinoki-2:#26362A;
+  --moss:#B9C0A4;        /* sage of Hosta / Chamaecyparis foliage */
+  --lichen:#E6E8DD;      /* overcast PNW sky behind the stock */
+  --ink:#16201A;
+  --accent:#9A2A1E;      /* Japanese maple red: the one accent */
+  --rule-dark:rgba(230,232,221,.22);
+  --rule-light:rgba(22,32,26,.2);
+  --serif:"Newsreader", Georgia, serif;
+  --sans:"Hanken Grotesk", system-ui, sans-serif;
+  --mono:"IBM Plex Mono", ui-monospace, monospace;
+  --gutter:clamp(16px, 4vw, 56px);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{background:var(--lichen);color:var(--ink);font:400 15px/1.55 var(--sans);overflow-x:hidden}
+img{display:block;width:100%;height:100%;object-fit:cover}
+a{color:inherit}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.dark :focus-visible{outline-color:var(--lichen)}
+
+.mono{font:500 11px/1.4 var(--mono);letter-spacing:.06em;text-transform:uppercase}
+.dark{background:var(--hinoki);color:var(--lichen)}
+.moss{background:var(--moss)}
+
+/* buttons: square outline, the shape language is rectilinear like a ruled catalog */
+.btn{display:inline-flex;align-items:center;gap:.6em;font:500 12px/1 var(--mono);letter-spacing:.06em;text-transform:uppercase;text-decoration:none;border:1px solid currentColor;padding:13px 16px;transition:background .2s,color .2s}
+.btn:hover{background:var(--ink);color:var(--lichen);border-color:var(--ink)}
+.dark .btn:hover{background:var(--lichen);color:var(--hinoki);border-color:var(--lichen)}
+.btn.red{color:var(--accent)}
+.btn.red:hover{background:var(--accent);color:var(--lichen);border-color:var(--accent)}
+.arrow{font-family:var(--sans)}
+
+/* ---------- header ---------- */
+header{position:sticky;top:0;z-index:10;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:14px var(--gutter);background:var(--hinoki);color:var(--lichen);border-bottom:1px solid var(--rule-dark)}
+.mark{display:flex;align-items:baseline;gap:12px;text-decoration:none}
+.mark b{font:400 22px/1 var(--serif);letter-spacing:-.01em}
+.mark span{opacity:.6}
+nav ul{display:flex;gap:26px;list-style:none}
+nav a{text-decoration:none;font:500 11px/1 var(--mono);letter-spacing:.06em;text-transform:uppercase;opacity:.75;padding:6px 0;border-bottom:1px solid transparent}
+nav a:hover{opacity:1;border-color:currentColor}
+.head-call{padding:10px 14px}
+@media (max-width:900px){nav{display:none}.mark span{display:none}}
+
+/* ---------- hero: split ---------- */
+.hero{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);min-height:min(92vh,900px)}
+.hero-panel{position:relative;display:flex;flex-direction:column;justify-content:space-between;padding:clamp(28px,5vw,72px) var(--gutter);gap:48px}
+.meta-row{display:flex;flex-wrap:wrap;gap:6px 22px;opacity:.7}
+.hero h1{font:300 clamp(48px,7.4vw,118px)/.94 var(--serif);letter-spacing:-.035em;text-wrap:balance;max-width:9ch}
+.hero h1 em{font-style:italic}
+.hero-foot{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:end;gap:24px}
+.hero-foot p{max-width:34ch;font-size:14px;opacity:.85}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.hero-photo.photo{position:relative;min-height:420px;overflow:visible}
+.hero-photo figcaption{position:absolute;right:16px;bottom:14px;color:var(--lichen);opacity:.85;text-shadow:0 0 12px rgba(0,0,0,.5)}
+.inset{position:absolute;width:clamp(120px,15vw,210px);aspect-ratio:1;left:0;bottom:clamp(28px,5vw,72px);transform:translateX(-50%);border:6px solid var(--hinoki);z-index:2}
+@media (max-width:900px){
+  .hero{grid-template-columns:1fr;min-height:0}
+  .hero-photo.photo{order:-1;aspect-ratio:1;min-height:0}
+  .inset{display:none}
+  .hero-foot{grid-template-columns:1fr}
+}
+
+/* ---------- maple yard ---------- */
+.section{padding:clamp(56px,9vw,128px) var(--gutter)}
+.sec-head{display:flex;justify-content:space-between;align-items:baseline;gap:24px;padding-bottom:14px;border-bottom:1px solid var(--rule-light);margin-bottom:clamp(32px,5vw,64px)}
+.dark .sec-head{border-color:var(--rule-dark)}
+.maples{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(32px,6vw,96px);align-items:start}
+.big-num{display:flex;align-items:flex-start;gap:14px}
+.big-num strong{font:300 clamp(120px,20vw,300px)/.8 var(--serif);letter-spacing:-.06em;color:var(--accent)}
+.big-num .mono{margin-top:.8em;max-width:14ch}
+.maples h2{font:300 clamp(30px,3.6vw,52px)/1.04 var(--serif);letter-spacing:-.02em;text-wrap:balance;margin:36px 0 18px;max-width:16ch}
+.maples p{max-width:44ch}
+.maples .photo{aspect-ratio:1}
+.photo{position:relative;overflow:hidden;background:var(--moss)}
+.cap{margin-top:10px;display:flex;justify-content:space-between;gap:12px;opacity:.65}
+@media (max-width:900px){.maples{grid-template-columns:1fr}}
+
+/* ---------- catalog list ---------- */
+.catalog-wrap{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:clamp(32px,5vw,80px);align-items:start}
+.tabs{display:flex;gap:22px;flex-wrap:wrap;margin-bottom:18px}
+.tabs button{all:unset;cursor:pointer;font:500 11px/1 var(--mono);letter-spacing:.06em;text-transform:uppercase;padding:6px 0;border-bottom:1px solid transparent;opacity:.6}
+.tabs button[aria-pressed="true"]{opacity:1;border-color:currentColor}
+.tabs button:focus-visible{outline:2px solid var(--accent);outline-offset:4px}
+.catalog{width:100%;border-collapse:collapse}
+.catalog th{text-align:left;font:500 10px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;opacity:.55;padding:0 12px 10px 0;border-bottom:1px solid var(--rule-light)}
+.catalog td{padding:15px 12px 15px 0;border-bottom:1px solid var(--rule-light);vertical-align:baseline}
+.catalog td:first-child{font:400 clamp(20px,2vw,26px)/1.15 var(--serif);letter-spacing:-.01em}
+.catalog td.bot{font:italic 300 16px/1.3 var(--serif);opacity:.75}
+.catalog td.typ{font:500 11px/1 var(--mono);letter-spacing:.06em;text-transform:uppercase;white-space:nowrap;text-align:right}
+.catalog tr.lead td.typ{color:var(--accent)}
+.catalog tr[hidden]{display:none}
+.catalog-side{position:sticky;top:88px}
+.catalog-side .photo{aspect-ratio:1}
+.catalog-side p{margin-top:18px;font-size:14px;max-width:38ch}
+@media (max-width:900px){.catalog-wrap{grid-template-columns:1fr}.catalog-side{position:static}}
+@media (max-width:560px){.catalog td.bot,.catalog th.bot{display:none}}
+
+/* ---------- wood boxes (type only: no photo exists yet) ---------- */
+.boxes{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px}
+.boxes h2{grid-column:1/8;font:300 clamp(40px,6vw,92px)/.95 var(--serif);letter-spacing:-.035em;text-wrap:balance}
+.boxes .lede{grid-column:9/13;align-self:end;font-size:15px}
+.spec{grid-column:1/13;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));margin-top:clamp(40px,6vw,88px);border-top:1px solid var(--rule-light)}
+.spec div{padding:18px 18px 0 0;border-right:1px solid var(--rule-light);min-height:150px}
+.spec div+div{padding-left:18px}
+.spec div:last-child{border-right:0}
+.spec .mono{opacity:.6;display:block;margin-bottom:14px}
+.spec p{font:400 19px/1.3 var(--serif);max-width:22ch}
+@media (max-width:900px){.boxes h2,.boxes .lede{grid-column:1/13}.spec{grid-template-columns:1fr 1fr}.spec div{border-bottom:1px solid var(--rule-light);padding:18px 14px 18px 0!important}.spec div:nth-child(2n){border-right:0;padding-left:14px!important}}
+@media (max-width:480px){.spec{grid-template-columns:1fr}.spec div{border-right:0!important;padding-left:0!important;min-height:0}}
+
+/* ---------- landscaping: split ---------- */
+.split{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+.split .photo{min-height:560px}
+.split-panel{padding:clamp(40px,6vw,88px) var(--gutter);display:flex;flex-direction:column;justify-content:space-between;gap:40px}
+.split-panel h2{font:300 clamp(36px,4.6vw,68px)/1 var(--serif);letter-spacing:-.03em;text-wrap:balance;max-width:12ch;margin-top:18px}
+.svc{list-style:none;border-top:1px solid var(--rule-dark)}
+.svc li{display:flex;justify-content:space-between;gap:16px;padding:13px 0;border-bottom:1px solid var(--rule-dark);font:400 19px/1.2 var(--serif)}
+.svc li .mono{opacity:.55;font-size:10px;align-self:center}
+@media (max-width:900px){.split{grid-template-columns:1fr}.split .photo{min-height:0;aspect-ratio:1}}
+
+.work{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(10px,1.4vw,20px)}
+.work figure .photo{aspect-ratio:1}
+.work figcaption{margin-top:9px;opacity:.7}
+@media (max-width:900px){.work{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* ---------- florals ---------- */
+.florals{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(32px,6vw,96px);align-items:center}
+.florals .photo{aspect-ratio:1}
+.florals h2{font:300 clamp(40px,5.6vw,84px)/.96 var(--serif);letter-spacing:-.035em;text-wrap:balance;max-width:11ch;margin:18px 0 28px}
+.florals p{max-width:46ch}
+blockquote{margin-top:40px;padding-top:18px;border-top:1px solid var(--rule-light);max-width:46ch}
+blockquote p{font:italic 300 24px/1.25 var(--serif)}
+blockquote cite{display:block;margin-top:10px;font-style:normal;opacity:.6}
+@media (max-width:900px){.florals{grid-template-columns:1fr}}
+
+/* ---------- visit ---------- */
+.visit{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:clamp(40px,6vw,96px)}
+.visit h2{font:300 clamp(40px,5.4vw,80px)/.96 var(--serif);letter-spacing:-.035em;text-wrap:balance;max-width:12ch}
+.notice{margin-top:32px;padding:18px 0;border-top:1px solid var(--rule-dark);border-bottom:1px solid var(--rule-dark);display:grid;grid-template-columns:auto minmax(0,1fr);gap:8px 20px}
+.notice .mono{opacity:.6;padding-top:4px}
+.notice p{font:400 19px/1.35 var(--serif)}
+.addr{margin-top:32px;font:400 22px/1.35 var(--serif)}
+.addr a{text-decoration:none;border-bottom:1px solid var(--rule-dark)}
+.addr a:hover{border-color:currentColor}
+.visit-ctas{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.hours{width:100%;border-collapse:collapse}
+.hours td{padding:12px 0;border-bottom:1px solid var(--rule-dark);font:400 13px/1 var(--mono);letter-spacing:.03em}
+.hours td:last-child{text-align:right}
+.hours tr.today td{font-weight:500;text-decoration:underline;text-underline-offset:4px}
+.hours-note{margin-top:12px;opacity:.6}
+.reviews{margin-top:56px;border-top:1px solid var(--rule-dark)}
+.reviews li{list-style:none;padding:16px 0;border-bottom:1px solid var(--rule-dark);display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:baseline}
+.reviews q{font:italic 300 18px/1.3 var(--serif)}
+.reviews .mono{opacity:.55;font-size:10px}
+@media (max-width:900px){.visit{grid-template-columns:1fr}}
+@media (max-width:480px){.reviews li{grid-template-columns:1fr;gap:6px}}
+
+/* ---------- footer ---------- */
+footer{padding:28px var(--gutter) calc(28px + env(safe-area-inset-bottom));display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px 32px;border-top:1px solid var(--rule-dark)}
+footer .mono{opacity:.6}
+footer a{text-decoration:none}
+footer a:hover{text-decoration:underline}
+
+/* ---------- motion: once, gentle ---------- */
+/* visible at rest; a short rise plays once when a block first scrolls in */
+@keyframes rise{from{transform:translateY(14px)}to{transform:none}}
+.reveal.in{animation:rise .9s ease both}
+@media (prefers-reduced-motion:reduce){.reveal.in{animation:none}}
+</style>
+</head>
+<body>
+
+<header class="dark">
+  <a class="mark" href="#top" aria-label="Green Knight Nursery and Landscaping, home">
+    <b>Green Knight</b><span class="mono">Nursery &amp; Landscaping</span>
+  </a>
+  <nav aria-label="Main">
+    <ul>
+      <li><a href="#grow">What we grow</a></li>
+      <li><a href="#boxes">Wood boxes</a></li>
+      <li><a href="#landscape">Landscaping</a></li>
+      <li><a href="#florals">Florals</a></li>
+      <li><a href="#visit">Visit</a></li>
+    </ul>
+  </nav>
+  <a class="btn head-call" href="tel:+12065503285">Call ahead <span class="arrow">↗</span></a>
+</header>
+
+<main id="top">
+
+<!-- ==== SWAP: hero ==== -->
+<section class="hero dark" aria-labelledby="h1">
+  <div class="hero-panel">
+    <div class="meta-row mono">
+      <span>Kirkland, WA · Highlands</span>
+      <span>Since 1998</span>
+      <span>47.6877° N, 122.1885° W</span>
+    </div>
+    <h1 id="h1"><span class="sr-only">Green Knight Nursery, Kirkland. </span>We grow everything we&nbsp;<em>sell.</em></h1>
+    <div class="hero-foot">
+      <div>
+        <p>A boutique nursery in the heart of Kirkland. We specialize in Japanese maples, unique pines, Cedrus, fir, magnolia, dove trees, evergreen magnolia and Hinoki cypress.</p>
+        <div class="hero-ctas">
+          <a class="btn" href="#grow">See what's growing <span class="arrow">↓</span></a>
+          <a class="btn" href="tel:+12065503285">(206) 550-3285</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <figure class="hero-photo photo">
+    <img src="img/nursery-path.jpg" alt="A stepping-stone path running between rows of potted trees and shrubs under tall conifers at the Green Knight nursery yard" width="1440" height="1080" fetchpriority="high">
+    <div class="inset"><img src="img/rhododendron.jpg" alt="Close-up of a pale pink rhododendron flower" loading="lazy" width="486" height="1000"></div>
+  </figure>
+</section>
+
+<!-- ==== SWAP: the differentiator ==== -->
+<section class="section" id="maples" aria-labelledby="maples-h">
+  <div class="sec-head"><span class="mono">The maple yard</span><span class="mono">Acer palmatum</span></div>
+  <div class="maples">
+    <div class="reveal">
+      <div class="big-num"><strong data-k="mapleCount">≈400</strong><span class="mono">Japanese maple varieties, grown on site</span></div>
+      <h2 id="maples-h">Japanese maples, grown and cared for here.</h2>
+      <p>Scott grows and takes care of the maples himself, here in Kirkland. Call ahead and he'll talk you through what grows well in this area.</p>
+    </div>
+    <figure class="reveal">
+      <div class="photo"><img src="img/nursery-stock.jpg" alt="Rows of young conifers and broadleaf trees growing in the nursery yard" loading="lazy" width="1000" height="589"></div>
+      <figcaption class="cap mono"><span>Stock grown on site</span><span>Kirkland, WA</span></figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ==== SWAP: catalog (data in CLIENT.varieties) ==== -->
+<section class="section moss" id="grow" aria-labelledby="grow-h">
+  <div class="sec-head"><h2 id="grow-h" class="mono">What we grow</h2><span class="mono">Availability changes: call to check</span></div>
+  <div class="catalog-wrap">
+    <div>
+      <div class="tabs" role="group" aria-label="Filter plants">
+        <button type="button" aria-pressed="true" data-f="all">All</button>
+        <button type="button" aria-pressed="false" data-f="tree">Trees</button>
+        <button type="button" aria-pressed="false" data-f="conifer">Conifers</button>
+        <button type="button" aria-pressed="false" data-f="flower">Flowering</button>
+      </div>
+      <table class="catalog">
+        <thead><tr><th scope="col">Plant</th><th scope="col" class="bot">Botanical</th><th scope="col" style="text-align:right">Type</th></tr></thead>
+        <tbody id="catalog-body"></tbody>
+      </table>
+    </div>
+    <aside class="catalog-side reveal">
+      <figure>
+        <div class="photo"><img src="img/gunnera.jpg" alt="Giant Gunnera leaves at the nursery" loading="lazy" width="1080" height="1920"></div>
+        <figcaption class="cap mono"><span>Giant Gunnera at the nursery</span><span>@greenknightnursery</span></figcaption>
+      </figure>
+      <p>And much more. The front looks like a house; the full selection is in the yard out back.</p>
+    </aside>
+  </div>
+</section>
+
+<!-- ==== SWAP: wood boxes ==== -->
+<section class="section" id="boxes" aria-labelledby="boxes-h">
+  <div class="sec-head"><span class="mono">Made here</span><span class="mono">Reclaimed cedar</span></div>
+  <div class="boxes">
+    <h2 id="boxes-h" class="reveal">Wood boxes, built from old fence boards.</h2>
+    <p class="lede reveal">We make our own wood boxes out of recycled cedar fence boards and fill them with conifers, maples, annuals and perennials.</p>
+    <div class="spec">
+      <div><span class="mono">Filled with</span><p>Our own conifers, maples, annuals and perennials</p></div>
+      <div><span class="mono">Bonsai boxes</span><p>Made with our own conifers and Japanese maples</p></div>
+      <div><span class="mono">Gift delivery</span><p>Made up and delivered anywhere within driving distance</p></div>
+      <div><span class="mono">Order</span><p><a href="tel:+12065503285">Call Scott</a> or <a href="mailto:peatmoss2000@aol.com">email</a></p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ==== SWAP: landscaping (secondary) ==== -->
+<section class="split dark" id="landscape" aria-labelledby="land-h">
+  <div class="photo"><img src="img/lighting.jpg" alt="A garden at night lit from below, uplights glowing in the canopy of a tree" loading="lazy" width="1000" height="562"></div>
+  <div class="split-panel">
+    <div>
+      <span class="mono" style="opacity:.6">Landscaping</span>
+      <h2 id="land-h">Full landscape design and installation.</h2>
+    </div>
+    <ul class="svc" id="svc-list"></ul>
+    <div><a class="btn" href="tel:+12065503285">Talk through a project <span class="arrow">↗</span></a></div>
+  </div>
+</section>
+
+<section class="section" aria-label="Recent landscape work">
+  <div class="sec-head"><span class="mono">Recent work</span><span class="mono">Owner photos</span></div>
+  <div class="work" id="work"></div>
+</section>
+
+<!-- ==== SWAP: florals ==== -->
+<section class="section moss" id="florals" aria-labelledby="flor-h">
+  <div class="florals">
+    <figure class="reveal">
+      <div class="photo"><img src="img/dahlia.jpg" alt="A yellow and red cactus dahlia grown at the nursery" loading="lazy" width="1440" height="1800"></div>
+      <figcaption class="cap mono"><span>Dahlia, grown on site</span><span>@greenknightnursery</span></figcaption>
+    </figure>
+    <div class="reveal">
+      <span class="mono">Weddings &amp; events</span>
+      <h2 id="flor-h">Sustainable flowers for weddings and events.</h2>
+      <p>We have a full wedding service to provide sustainable flowers to any wedding or special event.</p>
+      <blockquote>
+        <p>“The show on wedding day was breathtaking.”</p>
+        <cite class="mono">Google review</cite>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- ==== SWAP: visit ==== -->
+<section class="section dark" id="visit" aria-labelledby="visit-h">
+  <div class="sec-head"><span class="mono">Visit the yard</span><span class="mono">4.8 · 23 Google reviews</span></div>
+  <div class="visit">
+    <div>
+      <h2 id="visit-h">It looks like a house. The nursery is out back.</h2>
+      <div class="notice">
+        <span class="mono">Note</span>
+        <p>Please call before coming to make sure we are here.</p>
+      </div>
+      <p class="addr">
+        <a href="https://www.google.com/maps/search/?api=1&query=9625+Observation+Dr+Kirkland+WA+98033" target="_blank" rel="noopener">9625 Observation Dr<br>Kirkland, WA 98033</a><br>
+        <a href="tel:+12065503285">(206) 550-3285</a>
+      </p>
+      <div class="visit-ctas">
+        <a class="btn" href="tel:+12065503285">Call ahead <span class="arrow">↗</span></a>
+        <a class="btn" href="https://www.google.com/maps/dir/?api=1&destination=9625+Observation+Dr+Kirkland+WA+98033" target="_blank" rel="noopener">Directions <span class="arrow">↗</span></a>
+        <a class="btn" href="mailto:peatmoss2000@aol.com">Email</a>
+      </div>
+      <p class="mono" style="margin-top:28px;opacity:.6">Also at the Issaquah Farmers Market</p>
+    </div>
+    <div>
+      <table class="hours" aria-label="Opening hours"><tbody id="hours"></tbody></table>
+      <p class="hours-note mono">Listed hours · Please call to confirm</p>
+      <ul class="reviews" aria-label="From Google reviews" id="reviews"></ul>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="dark">
+  <span class="mono">Green Knight Nursery &amp; Landscaping · Scott Reusser · Since 1998</span>
+  <span class="mono"><a href="https://www.instagram.com/greenknightnursery/" rel="noopener">Instagram</a> · <a href="https://www.facebook.com/greenknightkirkalnd" rel="noopener">Facebook</a></span>
+  <span class="mono">Speculative redesign concept by Maneki Studio · Not affiliated with Green Knight Nursery &amp; Landscaping</span>
+</footer>
+
+<script>
+/* ==== SWAP: CLIENT DATA. Everything below is the client's own stated facts ==== */
+const CLIENT = {
+  // Plant list = owner's Google Business Profile + Facebook bio, in his order. Botanical names added for catalog convention.
+  varieties: [
+    { name:"Japanese maples", bot:"Acer palmatum", type:"Tree", f:["tree"], lead:true, note:"≈400 vars." },
+    { name:"Unique pines", bot:"Pinus", type:"Conifer", f:["conifer"] },
+    { name:"Cedar", bot:"Cedrus", type:"Conifer", f:["conifer"] },
+    { name:"Fir", bot:"Abies", type:"Conifer", f:["conifer"] },
+    { name:"Hinoki cypress", bot:"Chamaecyparis obtusa", type:"Conifer", f:["conifer"] },
+    { name:"Magnolia", bot:"Magnolia", type:"Tree", f:["tree","flower"] },
+    { name:"Evergreen magnolia", bot:"Magnolia grandiflora", type:"Tree", f:["tree","flower"] },
+    { name:"Dove tree", bot:"Davidia involucrata", type:"Tree", f:["tree","flower"] },
+    { name:"Hydrangea", bot:"Hydrangea", type:"Shrub", f:["flower"] },
+    { name:"Peony", bot:"Paeonia", type:"Perennial", f:["flower"] },
+    { name:"Dahlia", bot:"Dahlia", type:"Perennial", f:["flower"] }
+  ],
+  services: [
+    ["Landscape design & installation","Design"],
+    ["Irrigation","Install"],
+    ["Landscape lighting","Install"],
+    ["Water features","Install"],
+    ["Pavers & patios","Install"],
+    ["Seasonal containers","Spring · Summer · Fall"]
+  ],
+  // Captions are the owner's own Yelp captions where he wrote one
+  work: [
+    { src:"img/brick-house.jpg", alt:"A brick house with a full planted border along the front", cap:"Full design & install" },
+    { src:"img/stone-path.jpg", alt:"Stone stepping path through a planted garden with a bench", cap:"Stone path & bench" },
+    { src:"img/water-feature.jpg", alt:"A boulder water feature set in river rock and planting", cap:"Water feature" },
+    { src:"img/pavers.jpg", alt:"A brick paver patio bordered by a clipped hedge", cap:"Paver patio" },
+    { src:"img/fall-display.jpg", alt:"A bed of fall annuals along a walkway", cap:"Fall annual display" },
+    { src:"img/summer-pots.jpg", alt:"Summer containers spilling with petunias and cannas", cap:"Summer pots" }
+  ],
+  // Google Business Profile hours (Oct 2026). Listings disagree: confirm with Scott.
+  hours: [ ["Sunday","9 – 5"],["Monday","9 – 8"],["Tuesday","9 – 8"],["Wednesday","9 – 8"],["Thursday","9 – 8"],["Friday","8 – 8"],["Saturday","9 – 8"] ],
+  // Short excerpts from Google reviews
+  reviews: [
+    ["Will highly suggest getting your maples from here.", "Google review"],
+    ["Absolutely an expert on what grows well in this area.", "Google review"],
+    ["I got a bunch of hydrangeas and dahlias here.", "Google review"]
+  ]
+};
+
+/* ---------- render ---------- */
+const esc = s => s.replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+document.getElementById('catalog-body').innerHTML = CLIENT.varieties.map(v =>
+  `<tr data-f="${v.f.join(' ')}"${v.lead?' class="lead"':''}><td>${esc(v.name)}</td><td class="bot">${esc(v.bot)}</td><td class="typ">${esc(v.note||v.type)}</td></tr>`).join('');
+document.getElementById('svc-list').innerHTML = CLIENT.services.map(([n,t]) =>
+  `<li><span>${esc(n)}</span><span class="mono">${esc(t)}</span></li>`).join('');
+document.getElementById('work').innerHTML = CLIENT.work.map(w =>
+  `<figure class="reveal"><div class="photo"><img src="${w.src}" alt="${esc(w.alt)}" loading="lazy"></div><figcaption class="mono">${esc(w.cap)}</figcaption></figure>`).join('');
+const today = new Date().getDay();
+document.getElementById('hours').innerHTML = CLIENT.hours.map(([d,h],i) =>
+  `<tr${i===today?' class="today"':''}><td>${d}${i===today?' · Today':''}</td><td>${h}</td></tr>`).join('');
+document.getElementById('reviews').innerHTML = CLIENT.reviews.map(([q,s]) =>
+  `<li><q>${esc(q)}</q><span class="mono">${esc(s)}</span></li>`).join('');
+
+/* filter tabs */
+const tabs = document.querySelectorAll('.tabs button');
+tabs.forEach(b => b.addEventListener('click', () => {
+  tabs.forEach(x => x.setAttribute('aria-pressed', x===b));
+  document.querySelectorAll('#catalog-body tr').forEach(r => {
+    r.hidden = !(b.dataset.f==='all' || r.dataset.f.split(' ').includes(b.dataset.f));
+  });
+}));
+
+/* reveal once */
+if ('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { rootMargin:'0px 0px -8% 0px' });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+} else document.querySelectorAll('.reveal').forEach(el => el.classList.add('in'));
+</script>
+</body>
+</html>
