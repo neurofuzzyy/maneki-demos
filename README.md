@@ -8,6 +8,7 @@ Each prospect gets one folder at the repo root. The folder name is the URL path.
 
 ```
 senn-landscaping/      -> /senn-landscaping/
+justins-landscaping/   -> /justins-landscaping/
   index.html
   img/
 ```

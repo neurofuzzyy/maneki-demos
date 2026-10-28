@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Justin&#x27;s Landscaping · Seattle hardscapes, planting &amp; RainWise</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Justin&#x27;s Landscaping builds patios, walkways, fences and RainWise rain gardens and cisterns across Seattle. Free in-person consult. Call 206-390-1463.">
+<meta name="robots" content="noindex, nofollow">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Justin&#x27;s Landscaping">
+<meta property="og:description" content="Justin&#x27;s Landscaping builds patios, walkways, fences and RainWise rain gardens and cisterns across Seattle. Free in-person consult. Call 206-390-1463.">
+<meta property="og:image" content="https://maneki-demos.pages.dev/justins-landscaping/img/og.jpg">
+<meta property="og:url" content="https://maneki-demos.pages.dev/justins-landscaping/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&family=Martian+Mono:wdth,wght@75..112.5,300..500&display=swap">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "HomeAndConstructionBusiness", "name": "Justin's Landscaping", "description": "We specialize in transforming limited city landscapes into creative, functional sanctuaries that serve both people and wildlife.", "telephone": "+1-206-390-1463", "email": "Jhowell3600@gmail.com", "image": "img/front-walk.webp", "address": {"@type": "PostalAddress", "streetAddress": "3643 Wallingford Ave N #5", "addressLocality": "Seattle", "addressRegion": "WA", "postalCode": "98103", "addressCountry": "US"}, "areaServed": "Seattle, WA", "knowsAbout": ["Patios, walkways, paved steps", "Driveway landscaping", "Outdoor step construction", "Retaining walls", "Stone masonry", "Stone and rock landscaping", "Porous pavement / depaving", "Decks", "Arbors", "Fences", "Stairs", "Outdoor electrical", "Outdoor plumbing", "Landscape design", "Garden design", "Landscape installations", "Tree landscaping", "Green landscaping", "Sod installation", "Hydroseeding", "Grass seeding", "Lawn care", "Rain gardens", "Cisterns", "Irrigation", "Yard drainage", "Yard grading", "Landscaping maintenance", "Landscape management", "Groundskeeping", "Gardening services", "Edible Plants", "Native Plants", "Pollinators", "Wildlife Attractors"], "sameAs": ["https://seattlerainwise.org/find-a-contractor/justins-landscaping/"]}</script>
+
+<style>
+/* Layout concept: a paving module. Flat grounds sampled from Justin's own job photos (concrete
+   stair treads, charcoal pavers, the green RainWise cistern, cedar fencing), hairline-ruled grids,
+   square photo crops, and one curve borrowed from his curved paver borders. */
+:root{
+  --stone:#E2E1DB;      /* concrete stair treads */
+  --paper:#F1F0EC;      /* stair treads in full sun */
+  --charcoal:#2A2E32;   /* charcoal pavers */
+  --green:#33453D;      /* RainWise cistern */
+  --accent:#C98B55;     /* cedar fencing — the one accent */
+  --accent-ink:#86522A; /* cedar, darkened for text on light grounds */
+  --ink:#1E2124;
+  --muted:#5A5E62;
+  --fg:var(--ink);
+  --line:rgba(30,33,36,.2);
+  --focus:var(--ink);
+  --display:"Archivo","Helvetica Neue",Arial,sans-serif;
+  --mono:"Martian Mono",ui-monospace,"SFMono-Regular",Menlo,monospace;
+  --gut:max(clamp(16px,4vw,56px),env(safe-area-inset-left,0px));
+  --gut-r:max(clamp(16px,4vw,56px),env(safe-area-inset-right,0px));
+  --sect:clamp(72px,10vw,144px);
+  color-scheme:light;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{margin:0;background:var(--stone);color:var(--fg);font-family:var(--display);font-variation-settings:"wdth" 100;
+  font-size:1rem;line-height:1.55;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--stone)}
+img{max-width:100%;display:block;height:auto}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--focus);outline-offset:3px}
+.dark{--fg:var(--stone);--muted:#A7AAA9;--line:rgba(226,225,219,.22);--focus:var(--accent);color:var(--fg)}
+.wrap{max-width:1360px;margin-inline:auto;padding-left:var(--gut);padding-right:var(--gut-r)}
+.label{font-family:var(--mono);font-size:.66rem;letter-spacing:.06em;text-transform:uppercase;
+  font-variation-settings:"wdth" 90;color:var(--muted);line-height:1.5}
+.h2{font-size:clamp(2.1rem,4.4vw,3.9rem);line-height:.96;letter-spacing:-.03em;font-weight:720;
+  font-variation-settings:"wdth" 112;text-wrap:balance;margin:0}
+.btn{display:inline-flex;align-items:center;gap:.6em;border:1px solid currentColor;border-radius:999px;
+  padding:.78rem 1.35rem;font:500 .9rem/1 var(--display);text-decoration:none;color:var(--fg);
+  background:transparent;cursor:pointer;transition:background .2s,color .2s}
+.btn:hover{background:var(--fg);color:var(--stone)}
+.dark .btn:hover{color:var(--charcoal)}
+.btn .arr{font-family:var(--mono);font-size:.8em}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* ---------- header ---------- */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:var(--stone);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;gap:2rem;padding-block:.95rem}
+.mark{font-weight:760;font-variation-settings:"wdth" 116;letter-spacing:-.02em;text-decoration:none;font-size:1.02rem;white-space:nowrap}
+.nav{display:flex;gap:1.6rem;margin-left:auto;font-size:.86rem}
+.nav a{text-decoration:none;padding-block:.2rem;border-bottom:1px solid transparent}
+.nav a:hover{border-color:currentColor}
+.top .tel{font-family:var(--mono);font-size:.78rem;text-decoration:none;white-space:nowrap}
+@media (max-width:820px){.nav{display:none}.top .tel{margin-left:auto}}
+
+/* ---------- hero ---------- */
+.hero{position:relative;z-index:2;padding-top:clamp(28px,4vw,56px)}
+.meta{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.4rem 2rem;padding-bottom:1rem;border-bottom:1px solid var(--line)}
+.hero h1{margin:clamp(18px,2.4vw,32px) 0 clamp(28px,3.6vw,52px);font-weight:780;font-variation-settings:"wdth" 108;
+  font-size:clamp(2.55rem,7.3vw,6.9rem);line-height:.88;letter-spacing:-.045em;text-wrap:balance;
+  animation:rise .9s cubic-bezier(.2,.7,.2,1) both}
+.hero-grid{display:grid;grid-template-columns:5fr 7fr;gap:clamp(24px,4vw,64px);align-items:start}
+.hero-copy{display:grid;gap:2rem;align-content:start;max-width:30rem}
+.lede{font-size:clamp(1.05rem,1.35vw,1.22rem);line-height:1.45;margin:0;text-wrap:pretty}
+.actions{display:flex;flex-wrap:wrap;align-items:center;gap:1rem 1.5rem}
+.actions .tel{font-family:var(--mono);font-size:.9rem;text-decoration:none;border-bottom:1px solid var(--line);padding-bottom:.15rem}
+.facts{display:grid;grid-template-columns:repeat(3,1fr);margin:0;border-top:1px solid var(--line)}
+.facts div{padding:.85rem .9rem 0 0;border-right:1px solid var(--line)}
+.facts div+div{padding-left:.9rem}
+.facts div:last-child{border-right:0}
+.facts dt{margin-bottom:.35rem}
+.facts dd{margin:0;font-size:.9rem;line-height:1.3}
+.hero-photo{position:relative;margin:0}
+.hero-photo>img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.inset{position:absolute;margin:0;left:-17%;bottom:clamp(-72px,-5vw,-40px);width:42%;
+  border:clamp(6px,.7vw,10px) solid var(--stone);border-radius:0 11rem 0 0;overflow:hidden;
+  animation:rise 1s .25s cubic-bezier(.2,.7,.2,1) both}
+.inset img{width:100%;aspect-ratio:1/1;object-fit:cover}
+.hero-cap{position:absolute;right:0;bottom:-1.9rem}
+@keyframes rise{from{transform:translateY(16px);opacity:.15}to{transform:none;opacity:1}}
+@media (max-width:860px){
+  .hero-grid{grid-template-columns:1fr}
+  .hero-photo{order:-1;margin-bottom:2.5rem}
+  .inset{left:auto;right:-6px;bottom:-36px;width:38%;border-radius:11rem 0 0 0}
+  .hero-cap{display:none}
+  .hero-copy{max-width:none;padding-bottom:var(--sect)}
+  .work{margin-top:0;padding-top:var(--sect)}
+}
+@media (max-width:420px){.facts{grid-template-columns:1fr}.facts div{border-right:0;padding:.7rem 0;border-bottom:1px solid var(--line)}.facts div+div{padding-left:0}}
+
+/* ---------- sections ---------- */
+section.band{padding-block:var(--sect)}
+.work{background:var(--charcoal);margin-top:calc(-1 * clamp(40px,5vw,72px));padding-top:calc(var(--sect) + clamp(40px,5vw,72px))}
+.sec-head{display:grid;grid-template-columns:1fr auto;align-items:end;gap:1rem 2rem;margin-bottom:clamp(32px,4vw,56px)}
+.sec-head .label{grid-column:1/-1}
+.grid{display:grid;grid-template-columns:repeat(6,1fr);gap:clamp(10px,1.4vw,20px)}
+.grid figure{margin:0;display:flex;flex-direction:column;gap:.6rem}
+.grid .fr{flex:1;min-height:0;overflow:hidden}
+.grid img{width:100%;height:100%;object-fit:cover}
+.grid .w{grid-column:span 4}.grid .t{grid-column:span 2}.grid .m{grid-column:span 3}
+.grid .t .fr{aspect-ratio:3/4}.grid .m .fr{aspect-ratio:4/3}
+.grid .w .fr{aspect-ratio:3/2}
+figcaption.label{display:flex;justify-content:space-between;gap:1rem}
+@media (max-width:900px){.grid{grid-template-columns:repeat(2,1fr)}.grid .w,.grid .m{grid-column:span 2}.grid .t{grid-column:span 1}.grid .w .fr,.grid .t .fr{aspect-ratio:auto}}
+@media (max-width:560px){.grid{grid-template-columns:1fr}.grid .w,.grid .m,.grid .t{grid-column:span 1}.grid .fr{aspect-ratio:4/3!important}}
+
+/* about */
+.about{background:var(--paper)}
+.about .wrap{display:grid;grid-template-columns:4fr 7fr;gap:clamp(32px,6vw,112px);align-items:start}
+.about figure{margin:0}
+.about figure img{width:100%;aspect-ratio:3/4;object-fit:cover}
+.about figure .label{margin-top:.6rem}
+.about-copy{display:grid;gap:2rem;padding-top:clamp(0px,3vw,48px)}
+.about em{font-style:italic;font-variation-settings:"wdth" 100;font-weight:500;color:var(--accent-ink)}
+.about-copy>p{max-width:34rem;margin:0;font-size:1.05rem;text-wrap:pretty}
+.rows{margin:0;border-top:1px solid var(--line)}
+.rows div{display:grid;grid-template-columns:minmax(8rem,1fr) 2.4fr;gap:1rem;padding:.85rem 0;border-bottom:1px solid var(--line)}
+.rows dd{margin:0;font-size:.95rem}
+.tags{display:flex;flex-wrap:wrap;gap:.35rem .5rem;list-style:none;margin:0;padding:0}
+.tags li::after{content:"·";margin-left:.5rem;color:var(--muted)}
+.tags li:last-child::after{content:none}
+@media (max-width:860px){.about .wrap{grid-template-columns:1fr}.about figure{max-width:420px}}
+
+/* rainwise */
+.rain{background:var(--green)}
+.rain .wrap{display:grid;grid-template-columns:6fr 5fr;gap:clamp(32px,6vw,104px);align-items:start}
+.rain-copy{display:grid;gap:2rem}
+.rain-copy p{margin:0;max-width:32rem;color:var(--fg)}
+.rain .h2 span{color:var(--accent)}
+.rain figure{margin:0;position:relative}
+.rain figure img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.rain blockquote{margin:0;padding-top:1.4rem;border-top:1px solid var(--line);display:grid;gap:.7rem}
+.rain blockquote p{font-size:1.15rem;line-height:1.4;max-width:30rem}
+.links{display:flex;flex-wrap:wrap;gap:.8rem 1.4rem;align-items:center}
+.links a.plain{font-size:.88rem;text-decoration:none;border-bottom:1px solid var(--line);padding-bottom:.1rem}
+@media (max-width:860px){.rain .wrap{grid-template-columns:1fr}.rain figure{order:-1;max-width:480px}}
+
+/* services */
+.svc{background:var(--stone)}
+.svc-table{border-top:1px solid var(--line);margin:0}
+.svc-table>div{display:grid;grid-template-columns:minmax(9rem,1fr) 3fr;gap:1rem 2rem;padding:1.1rem 0;border-bottom:1px solid var(--line)}
+.svc-table dt{font-weight:650;font-variation-settings:"wdth" 110;font-size:1.05rem;letter-spacing:-.01em}
+.svc-table ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(13.5rem,1fr));gap:.3rem 1.5rem;font-size:.95rem}
+.onsite{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(10px,1.4vw,20px);margin-top:clamp(48px,6vw,88px)}
+.onsite figure{margin:0;display:grid;gap:.6rem}
+.onsite img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.onsite-head{grid-column:1/-1;display:flex;justify-content:space-between;gap:1rem;border-bottom:1px solid var(--line);padding-bottom:.8rem}
+@media (max-width:640px){.svc-table>div{grid-template-columns:1fr}.onsite{grid-template-columns:1fr 1fr}.onsite figure:last-child{grid-column:span 2}.onsite figure:last-child img{aspect-ratio:3/2}}
+
+/* reviews */
+.reviews{background:var(--charcoal)}
+.score{display:flex;align-items:baseline;gap:1rem}
+.score b{font-size:clamp(3.4rem,7vw,6rem);font-weight:760;font-variation-settings:"wdth" 108;letter-spacing:-.05em;line-height:.85}
+.rv{list-style:none;margin:0;padding:0;border-top:1px solid var(--line);display:grid;grid-template-columns:1fr 1fr;column-gap:clamp(24px,4vw,64px)}
+.rv li{padding:1.5rem 0 1.6rem;border-bottom:1px solid var(--line);display:grid;gap:.9rem;align-content:start}
+.rv p{margin:0;font-size:clamp(1.02rem,1.3vw,1.18rem);line-height:1.42;text-wrap:pretty}
+.rv li:first-child{grid-column:1/-1}
+.rv li:first-child p{font-size:clamp(1.45rem,2.6vw,2.2rem);line-height:1.15;letter-spacing:-.02em;font-variation-settings:"wdth" 104;max-width:44rem}
+.rv-foot{margin-top:2rem}
+@media (max-width:760px){.rv{grid-template-columns:1fr}}
+
+/* contact */
+.contact{background:var(--stone)}
+.contact .wrap{display:grid;grid-template-columns:5fr 6fr;gap:clamp(40px,6vw,104px);align-items:start}
+.reach{display:grid;gap:2rem}
+.reach .big{font-family:var(--mono);font-size:clamp(1.25rem,2.3vw,1.8rem);font-variation-settings:"wdth" 92;letter-spacing:-.02em;text-decoration:none;user-select:all}
+form{display:grid;grid-template-columns:1fr 1fr;gap:1.4rem 1.2rem}
+.f{display:grid;gap:.45rem;min-width:0}
+.f.full{grid-column:1/-1}
+.f label{font-family:var(--mono);font-size:.66rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.f input,.f select,.f textarea{font:inherit;font-size:1rem;color:var(--fg);background:transparent;border:0;
+  border-bottom:1px solid var(--fg);border-radius:0;padding:.55rem 0;width:100%}
+.f select{appearance:none;background-image:linear-gradient(45deg,transparent 50%,var(--fg) 50%),linear-gradient(-45deg,transparent 50%,var(--fg) 50%);
+  background-size:5px 5px;background-position:calc(100% - 9px) 55%,calc(100% - 4px) 55%;background-repeat:no-repeat}
+.f textarea{min-height:7.5rem;resize:vertical}
+.f input:focus-visible,.f select:focus-visible,.f textarea:focus-visible{outline:none;border-bottom:2px solid var(--fg);margin-bottom:-1px}
+.f .err{font-size:.8rem;color:#8E2A1E;min-height:0}
+.f[data-bad] input,.f[data-bad] textarea{border-bottom-color:#8E2A1E}
+.form-foot{grid-column:1/-1;display:flex;flex-wrap:wrap;align-items:center;gap:1rem 1.5rem}
+.status{font-size:.9rem;margin:0}
+@media (max-width:860px){.contact .wrap{grid-template-columns:1fr}}
+@media (max-width:480px){form{grid-template-columns:1fr}}
+
+/* footer */
+.foot{background:var(--charcoal);padding-block:3rem 2.2rem}
+.foot .wrap{display:grid;gap:2rem}
+.foot .row{display:flex;flex-wrap:wrap;justify-content:space-between;gap:1rem 2rem;align-items:end}
+.foot .mark{font-size:clamp(1.6rem,3.4vw,2.6rem)}
+.credit{border-top:1px solid var(--line);padding-top:1rem}
+
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<a class="sr" href="#main">Skip to content</a>
+<header class="top"><div class="wrap">
+  <a class="mark" href="#top">Justin&#x27;s Landscaping</a>
+  <nav class="nav" aria-label="Main">
+    <a href="#work">Work</a><a href="#about">About</a><a href="#rainwise">RainWise</a><a href="#services">Services</a><a href="#reviews">Reviews</a><a href="#contact">Contact</a>
+  </nav>
+  <a class="tel" href="tel:+12063901463">206-390-1463</a>
+</div></header>
+
+<main id="main">
+<section class="hero" id="top" aria-labelledby="h1">
+  <div class="wrap">
+    <div class="meta"><span class="label">Landscaper · Wallingford, Seattle</span><span class="label">RainWise contractor</span><span class="label">47.65° N, 122.34° W</span></div>
+    <h1 id="h1">Justin&#x27;s Landscaping</h1>
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <p class="lede">We specialize in transforming limited city landscapes into creative, functional sanctuaries that serve both people and wildlife.</p>
+        <div class="actions">
+          <a class="btn" href="#contact">Request a free consult <span class="arr" aria-hidden="true">→</span></a>
+          <a class="tel" href="tel:+12063901463">206-390-1463</a>
+        </div>
+        <dl class="facts"><div><dt class="label">Consult</dt><dd>Free in-person consult</dd></div><div><dt class="label">Consultation</dt><dd>Within 3 weeks</dd></div><div><dt class="label">Installation</dt><dd>Within 4 weeks</dd></div></dl>
+      </div>
+      <figure class="hero-photo">
+        <img src="img/front-walk.webp" alt="Front of a white two-story house with a curved grey paver walkway bordered in lighter pavers, black stair railing and new plantings" width="680" height="510" fetchpriority="high" decoding="async">
+        <figure class="inset"><img src="img/herringbone-stairs.webp" alt="View from the top of front stairs down a herringbone paver walkway with a curved border, new lawn and a cedar fence" width="680" height="510" fetchpriority="high" decoding="async"></figure>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="band work dark" id="work" aria-labelledby="work-h">
+  <div class="wrap">
+    <div class="sec-head"><span class="label">Selected work</span><h2 class="h2" id="work-h">Patios, walkways &amp; fences</h2><span class="label">Photos from recent jobs</span></div>
+    <div class="grid"><figure class="w"><div class="fr"><img src="img/backyard-patio-adu.webp" alt="Aerial view of a fenced backyard with a red brick paver patio, cedar fencing and a gravel border beside a new cottage" width="680" height="370" loading="lazy" decoding="async"></div><figcaption class="label"><span>Brick patio and cedar fencing, backyard</span></figcaption></figure><figure class="t"><div class="fr"><img src="img/slab-patio.webp" alt="Long side-yard patio of large grey slab pavers, wet from rain, with planting beds along a cedar fence" width="382" height="510" loading="lazy" decoding="async"></div><figcaption class="label"><span>Large-format slab patio</span></figcaption></figure><figure class="m"><div class="fr"><img src="img/blend-patio.webp" alt="Wide patio of red and tan blended pavers edged with fresh sod, arborvitae hedge and a new cedar fence" width="680" height="510" loading="lazy" decoding="async"></div><figcaption class="label"><span>Paver patio with new sod</span></figcaption></figure><figure class="m"><div class="fr"><img src="img/patio-railing.webp" alt="Grey paver patio beside a house with a stained cedar railing and stairs up to the back door" width="680" height="510" loading="lazy" decoding="async"></div><figcaption class="label"><span>Paver patio and cedar railing</span></figcaption></figure><figure class="t"><div class="fr"><img src="img/charcoal-walkway.webp" alt="Charcoal paver walkway with a curved light-grey border, new shrubs and lawn between cedar fences" width="382" height="510" loading="lazy" decoding="async"></div><figcaption class="label"><span>Charcoal paver walk, new plantings</span></figcaption></figure><figure class="w"><div class="fr"><img src="img/brick-driveway.webp" alt="Red paver driveway in front of a two-car garage, continuing as a narrow path along a new cedar fence" width="680" height="372" loading="lazy" decoding="async"></div><figcaption class="label"><span>Paver driveway and side path</span></figcaption></figure><figure class="t"><div class="fr"><img src="img/side-path.webp" alt="Narrow side-yard path of red and grey pavers running between a house and a cedar fence" width="382" height="510" loading="lazy" decoding="async"></div><figcaption class="label"><span>Side-yard path, mixed pavers</span></figcaption></figure><figure class="w"><div class="fr"><img src="img/cedar-gate-driveway.webp" alt="New stained cedar fence and gate running from a covered porch across a driveway, with arborvitae behind" width="680" height="510" loading="lazy" decoding="async"></div><figcaption class="label"><span>Cedar fence and gate</span></figcaption></figure></div>
+  </div>
+</section>
+
+<section class="band about" id="about" aria-labelledby="about-h">
+  <div class="wrap">
+    <figure><img src="img/brick-path-cottage.webp" alt="Red brick walkway winding between dense shrubs and a fruiting tree to a cottage side door" width="382" height="510" loading="lazy" decoding="async"><figcaption class="label">Brick path, planted both sides</figcaption></figure>
+    <div class="about-copy">
+      <span class="label">About</span>
+      <h2 class="h2" id="about-h">We turn small urban plots into <em>productive</em> landscapes.</h2>
+      <p>By integrating edible plants whenever possible – from fruit bearing shrubs to functional herb gardens. Whether designing a rooftop oasis or a backyard food forest, we combine artistic vision with practical experience to create vibrant, living spaces that feel deeply personal and environmentally responsible.</p>
+      <dl class="rows"><div><dt class="label">Specialties</dt><dd><ul class="tags"><li>Edible Plants</li><li>Native Plants</li><li>Pollinators</li><li>Wildlife Attractors</li></ul></dd></div><div><dt class="label">Experience</dt><dd>Over 5 years in related fields</dd></div><div><dt class="label">Area</dt><dd>Serves Seattle and nearby areas</dd></div></dl>
+    </div>
+  </div>
+</section>
+
+<section class="band rain dark" id="rainwise" aria-labelledby="rain-h">
+  <div class="wrap">
+    <div class="rain-copy">
+      <span class="label">Seattle RainWise contractor</span>
+      <h2 class="h2" id="rain-h">Rain gardens <span>&amp;</span> cisterns</h2>
+      <p>Justin&#x27;s Landscaping is listed with RainWise, the City of Seattle and King County program for managing roof runoff with rain gardens and cisterns. Homes in eligible areas may qualify for RainWise rebates.</p>
+      <dl class="rows"><div><dt class="label">RainWise services</dt><dd>Cisterns, Rain Gardens</dd></div><div><dt class="label">Also builds</dt><dd>Porous Pavement/Depaving, Irrigation</dd></div><div><dt class="label">Financial support</dt><dd>Free in-person Consult · Vendor Payment Option (VPO)</dd></div><div><dt class="label">Scheduling</dt><dd>Consultation within 3 weeks · Installation within 4 weeks</dd></div></dl>
+      <div class="links">
+        <a class="btn" href="https://seattlerainwise.org/" target="_blank" rel="noopener">Check RainWise eligibility <span class="arr" aria-hidden="true">↗</span></a>
+        <a class="plain" href="https://seattlerainwise.org/find-a-contractor/justins-landscaping/" target="_blank" rel="noopener">RainWise contractor profile</a>
+      </div>
+      <blockquote><p>“Professional, efficient and environmentally responsible - a great asset to the GSI industry and a top-tier contractor.”</p><span class="label">Erin D. · Google</span></blockquote>
+    </div>
+    <figure><img src="img/cistern.webp" alt="Back of a grey house with a tall round green RainWise cistern on a wooden platform beside the downspout, with fresh mulch" width="632" height="510" loading="lazy" decoding="async"><figcaption class="label" style="margin-top:.6rem">Cistern beside the downspout</figcaption></figure>
+  </div>
+</section>
+
+<section class="band svc" id="services" aria-labelledby="svc-h">
+  <div class="wrap">
+    <div class="sec-head"><span class="label">Services</span><h2 class="h2" id="svc-h">Build, plant, maintain</h2><span class="label">Free in-person consult</span></div>
+    <dl class="svc-table"><div><dt>Hardscapes</dt><dd><ul><li>Patios, walkways, paved steps</li><li>Driveway landscaping</li><li>Outdoor step construction</li><li>Retaining walls</li><li>Stone masonry</li><li>Stone and rock landscaping</li><li>Porous pavement / depaving</li></ul></dd></div><div><dt>Construction</dt><dd><ul><li>Decks</li><li>Arbors</li><li>Fences</li><li>Stairs</li><li>Outdoor electrical</li><li>Outdoor plumbing</li></ul></dd></div><div><dt>Design &amp; planting</dt><dd><ul><li>Landscape design</li><li>Garden design</li><li>Landscape installations</li><li>Tree landscaping</li><li>Green landscaping</li></ul></dd></div><div><dt>Lawn</dt><dd><ul><li>Sod installation</li><li>Hydroseeding</li><li>Grass seeding</li><li>Lawn care</li></ul></dd></div><div><dt>Water &amp; grade</dt><dd><ul><li>Rain gardens</li><li>Cisterns</li><li>Irrigation</li><li>Yard drainage</li><li>Yard grading</li></ul></dd></div><div><dt>Maintenance</dt><dd><ul><li>Landscaping maintenance</li><li>Landscape management</li><li>Groundskeeping</li><li>Gardening services</li></ul></dd></div></dl>
+    <div class="onsite"><div class="onsite-head"><span class="label">On site</span><span class="label">Work in progress</span></div><figure><img src="img/laying-pavers.webp" alt="Grey pavers being laid in a basketweave pattern with a level in the foreground and stacks of pavers behind" width="382" height="510" loading="lazy" decoding="async"><figcaption class="label">Laying pavers</figcaption></figure><figure><img src="img/brick-path-build.webp" alt="A new red brick walkway being built across a prepared gravel base" width="382" height="510" loading="lazy" decoding="async"><figcaption class="label">Brick walkway, mid-install</figcaption></figure><figure><img src="img/flagstone.webp" alt="Irregular flagstone pieces fitted together into a path, seen from above" width="480" height="462" loading="lazy" decoding="async"><figcaption class="label">Flagstone, mid-install</figcaption></figure></div>
+  </div>
+</section>
+
+<section class="band reviews dark" id="reviews" aria-labelledby="rv-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="label">Reviews</span>
+      <h2 class="h2 sr" id="rv-h">Reviews</h2>
+      <div class="score"><b>4.8</b><span class="label">on Google<br>6 reviews</span></div>
+      <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Justin%27s+Landscaping+3643+Wallingford+Ave+N+Seattle" target="_blank" rel="noopener">Read on Google <span class="arr" aria-hidden="true">↗</span></a>
+    </div>
+    <ul class="rv"><li><p>“Justin and his son did an excellent job. They are attentive to every detail. They left our backyard spotless after completing the job.”</p><span class="label">Peter W. · Google</span></li><li><p>“Justin is a superb landscaper who is meticulous in his work and multi-talented with expertise in lawn care, plant selection and placement, and drainage management.”</p><span class="label">Daniel L. · Google</span></li><li><p>“Very happy with the work performed by Justin to add hardscaping and plantings to my parking strip. Justin took the time to do everything right with excellent attention to details.”</p><span class="label">Bill A. · Google</span></li><li><p>“Kind and loyal, reasonably priced. Started with them to cut our tall hedge and now have them come monthly to keep things looking keen.”</p><span class="label">Seattle homeowner · Consumers&#x27; Checkbook</span></li><li><p>“Justin really cares and is a good person. We appreciate him very much for his hard work and honesty.”</p><span class="label">k2 · Google</span></li></ul>
+  </div>
+</section>
+
+<section class="band contact" id="contact" aria-labelledby="ct-h">
+  <div class="wrap">
+    <div class="reach">
+      <span class="label">Contact</span>
+      <h2 class="h2" id="ct-h">Request a free consult</h2>
+      <a class="big" href="tel:+12063901463">206-390-1463</a>
+      <dl class="rows">
+        <div><dt class="label">Email</dt><dd><a href="mailto:Jhowell3600@gmail.com">Jhowell3600@gmail.com</a></dd></div>
+        <div><dt class="label">Based in</dt><dd>3643 Wallingford Ave N #5, Seattle, WA 98103</dd></div>
+        <div><dt class="label">Area</dt><dd>Serves Seattle and nearby areas</dd></div>
+        <div><dt class="label">Scheduling</dt><dd>Consultation within 3 weeks · Installation within 4 weeks</dd></div>
+      </dl>
+    </div>
+    <form id="consult" novalidate>
+      <div class="f"><label for="f-name">Name</label><input id="f-name" name="name" autocomplete="name" required><span class="err" aria-live="polite"></span></div>
+      <div class="f"><label for="f-phone">Phone</label><input id="f-phone" name="phone" type="tel" autocomplete="tel"><span class="err" aria-live="polite"></span></div>
+      <div class="f"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email"><span class="err" aria-live="polite"></span></div>
+      <div class="f"><label for="f-hood">Neighborhood</label><input id="f-hood" name="neighborhood" autocomplete="address-level3"><span class="err"></span></div>
+      <div class="f full"><label for="f-type">Project</label><select id="f-type" name="project"><option>Patio, walkway or steps</option><option>Fence, deck or stairs</option><option>Planting or garden design</option><option>RainWise rain garden or cistern</option><option>Lawn, sod or drainage</option><option>Ongoing maintenance</option><option>Something else</option></select></div>
+      <div class="f full"><label for="f-msg">Tell Justin about the yard</label><textarea id="f-msg" name="message" required></textarea><span class="err" aria-live="polite"></span></div>
+      <div class="form-foot"><button class="btn" type="submit">Send request <span class="arr" aria-hidden="true">→</span></button><p class="status" id="status" role="status"></p></div>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="foot dark"><div class="wrap">
+  <div class="row"><a class="mark" href="#top">Justin&#x27;s Landscaping</a><span class="label">Wallingford, Seattle · 206-390-1463</span></div>
+  <p class="label credit">Speculative website concept by Maneki Studio · Not affiliated with Justin&#x27;s Landscaping</p>
+</div></footer>
+
+<script>
+const ENDPOINT = ""; // Formspree form URL; empty = demo mode
+const form = document.getElementById('consult'), statusEl = document.getElementById('status');
+function setErr(id, msg){ const f=document.getElementById(id).closest('.f'); f.querySelector('.err').textContent=msg||''; msg?f.setAttribute('data-bad',''):f.removeAttribute('data-bad'); }
+form.addEventListener('submit', async ev => {
+  ev.preventDefault();
+  const v = id => document.getElementById(id).value.trim();
+  let ok = true; ['f-name','f-phone','f-email','f-msg'].forEach(i=>setErr(i,''));
+  if(!v('f-name')){ setErr('f-name','Add your name so Justin knows who to reply to.'); ok=false; }
+  if(!v('f-phone') && !v('f-email')){ setErr('f-phone','Add a phone number or an email.'); ok=false; }
+  if(v('f-email') && !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(v('f-email'))){ setErr('f-email','Check the email address, it looks incomplete.'); ok=false; }
+  if(!v('f-msg')){ setErr('f-msg','A sentence or two about the project helps.'); ok=false; }
+  if(!ok){ statusEl.textContent=''; form.querySelector('[data-bad] input, [data-bad] textarea')?.focus(); return; }
+  if(!ENDPOINT){ statusEl.textContent='Demo form: nothing was sent. On the live site this goes straight to Justin.'; return; }
+  statusEl.textContent='Sending…';
+  try{
+    const r = await fetch(ENDPOINT,{method:'POST',body:new FormData(form),headers:{Accept:'application/json'}});
+    if(!r.ok) throw new Error();
+    form.reset(); statusEl.textContent='Sent. Justin will get back to you to set up a consult.';
+  }catch(_){ statusEl.textContent='That didn’t go through. Call or text 206-390-1463 instead.'; }
+});
+</script>
+</body>
+</html>
