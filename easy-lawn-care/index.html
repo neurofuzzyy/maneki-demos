@@ -1,0 +1,530 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Easy Lawn Care &amp; Landscaping · Lawn care &amp; cleanups in Everett and Snohomish County</title>
+<meta name="description" content="Veteran-owned lawn care and yard cleanups across Everett, Mill Creek, Lake Stevens, Mukilteo and Bothell. Three service levels, no contracts, free estimates. Call or text (206) 900-2537.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#1d2820">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Easy Lawn Care &amp; Landscaping">
+<meta property="og:description" content="Veteran-owned lawn care and yard cleanups across Everett, Mill Creek, Lake Stevens, Mukilteo and Bothell. Three service levels, no contracts, free estimates. Call or text (206) 900-2537.">
+<meta property="og:image" content="https://maneki-demos.pages.dev/easy-lawn-care/img/og.jpg">
+<meta property="og:url" content="https://maneki-demos.pages.dev/easy-lawn-care/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2032%2032%22%3E%3Crect%20width%3D%2232%22%20height%3D%2232%22%20rx%3D%2216%22%20fill%3D%22%232f3d22%22%2F%3E%3Cpath%20d%3D%22M8%208h4v16H8zM16%208h4v16h-4z%22%20fill%3D%22%23aab96d%22%2F%3E%3C%2Fsvg%3E">
+<link rel="preload" href="fonts/bricolage.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face { font-family: "Bricolage Grotesque"; src: url(fonts/bricolage.woff2) format("woff2"); font-weight: 200 800; font-display: swap; }
+@font-face { font-family: "Figtree"; src: url(fonts/figtree.woff2) format("woff2"); font-weight: 300 900; font-display: swap; }
+@font-face { font-family: "DM Mono"; src: url(fonts/dm-mono-400.woff2) format("woff2"); font-weight: 400; font-display: swap; }
+@font-face { font-family: "DM Mono"; src: url(fonts/dm-mono-500.woff2) format("woff2"); font-weight: 500; font-display: swap; }
+</style>
+<style>
+/* Concept: "Mowing stripes" — sections alternate between the shaded and
+   sunlit greens of a freshly striped lawn; fir and overcast sky as quiet
+   grounds; the red of their azaleas is the one accent. Rounded, friendly
+   shapes because the business reads as an easygoing neighborhood crew. */
+:root {
+  /* — Per-client tokens (sampled from the client's own photos) — */
+  --turf-deep: #2f3d22;   /* shaded mowing stripe */
+  --turf-lit: #aab96d;    /* sunlit mowing stripe */
+  --fir: #1d2820;         /* evergreen backdrop behind every yard */
+  --overcast: #e8e9e1;    /* PNW sky */
+  --mulch: #26201c;       /* fresh bark mulch, used for text on light */
+  --cream: #eef0e3;       /* text on dark */
+  --accent: #c8372a;      /* red azalea, used sparingly */
+
+  --f-display: "Bricolage Grotesque", "Avenir Next", "Segoe UI", system-ui, sans-serif;
+  --f-body: "Figtree", "Avenir Next", "Segoe UI", system-ui, sans-serif;
+  --f-mono: "DM Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+
+  --radius: 22px;
+  --wrap: 1240px;
+  --gutter-l: max(20px, env(safe-area-inset-left, 0px));
+  --gutter-r: max(20px, env(safe-area-inset-right, 0px));
+  color-scheme: light;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body {
+  margin: 0; background: var(--fir); color: var(--cream);
+  font: 400 1rem/1.6 var(--f-body);
+  -webkit-font-smoothing: antialiased; overflow-x: hidden;
+}
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 30; background: var(--fir); }
+img { max-width: 100%; height: auto; display: block; }
+a { color: inherit; }
+h1, h2, h3 { margin: 0; font-family: var(--f-display); font-weight: 600; text-wrap: balance; }
+p { margin: 0; }
+ul { margin: 0; padding: 0; list-style: none; }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+/* Band themes */
+.on-dark  { --fg: var(--cream); --muted: rgb(238 240 227 / .72); --line: rgb(238 240 227 / .22); --focus: var(--cream); color: var(--fg); }
+.on-light { --fg: var(--mulch); --muted: rgb(38 32 28 / .74); --line: rgb(38 32 28 / .24); --focus: var(--mulch); color: var(--fg); }
+.bg-deep { background: var(--turf-deep); }
+.bg-lit { background: var(--turf-lit); }
+.bg-fir { background: var(--fir); }
+.bg-sky { background: var(--overcast); }
+:focus-visible { outline: 2px solid var(--focus, var(--cream)); outline-offset: 3px; border-radius: 6px; }
+
+.band { padding-block: clamp(72px, 10vw, 136px); }
+.wrap { max-width: var(--wrap); margin-inline: auto; padding-left: var(--gutter-l); padding-right: var(--gutter-r); }
+
+.meta { font: 500 .74rem/1.4 var(--f-mono); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); display: flex; flex-wrap: wrap; gap: .4em 1.4em; }
+.meta span + span::before { content: ""; display: inline-block; width: 6px; height: 6px; border-radius: 50%; background: var(--accent); margin-right: 1.4em; vertical-align: .12em; }
+.h2 { font-size: clamp(2.4rem, 6.2vw, 5.4rem); line-height: .98; letter-spacing: -.035em; font-variation-settings: "opsz" 96; }
+
+/* Buttons */
+.pill {
+  display: inline-flex; align-items: center; gap: .6em; padding: .82em 1.45em;
+  border: 1.5px solid currentColor; border-radius: 999px; background: transparent;
+  font: 600 .95rem/1 var(--f-body); color: inherit; text-decoration: none; cursor: pointer;
+  transition: background-color .2s ease, color .2s ease;
+}
+.pill:hover { background: var(--fg); color: var(--hover-ink, var(--turf-deep)); }
+.on-light .pill:hover { --hover-ink: var(--turf-lit); }
+.bg-sky .pill:hover { --hover-ink: var(--overcast); }
+.pill .arrow { transition: transform .2s ease; }
+.pill:hover .arrow { transform: translateX(3px); }
+.textlink { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: .28em; }
+.textlink:hover { text-decoration-thickness: 2px; }
+
+/* Header */
+.site-header { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20; background: var(--fir); border-bottom: 1px solid rgb(238 240 227 / .12); }
+.site-header .wrap { display: flex; align-items: center; gap: 24px; min-height: 68px; }
+.brand { text-decoration: none; font-family: var(--f-display); font-size: 1.12rem; line-height: 1; letter-spacing: -.02em; white-space: nowrap; }
+.brand b { font-weight: 700; }
+.brand span { font-weight: 400; opacity: .78; }
+.nav { display: flex; gap: 26px; margin-left: auto; font-size: .92rem; }
+.nav a { text-decoration: none; opacity: .85; }
+.nav a:hover { opacity: 1; text-decoration: underline; text-underline-offset: .3em; }
+.site-header .pill { padding: .6em 1.1em; font-size: .88rem; }
+@media (max-width: 900px) { .nav { display: none; } .site-header .pill { margin-left: auto; } }
+@media (max-width: 420px) { .brand span { display: none; } }
+
+/* Hero — split screen */
+.hero { display: grid; grid-template-columns: 1.05fr 1fr; }
+.hero-photo { position: relative; min-height: 560px; }
+.hero-photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 30% 70%; }
+.hero-panel {
+  position: relative; display: flex; flex-direction: column; gap: 28px;
+  padding-block: clamp(48px, 6vw, 88px) clamp(40px, 5vw, 64px);
+  padding-left: max(clamp(28px, 5vw, 80px), env(safe-area-inset-left, 0px));
+  padding-right: max(clamp(20px, 5vw, 80px), env(safe-area-inset-right, 0px));
+  /* mowing stripes: flat alternating bands, no blending */
+  background-image: repeating-linear-gradient(90deg, transparent 0 92px, rgb(255 255 255 / .03) 92px 184px);
+}
+.hero h1 { font-size: clamp(2.6rem, 5vw, 4.8rem); line-height: .98; letter-spacing: -.04em; font-variation-settings: "opsz" 96; max-width: 11ch; }
+.hero-body { max-width: 34ch; font-size: 1.06rem; color: var(--muted); }
+.hero-ctas { display: flex; flex-wrap: wrap; align-items: center; gap: 14px 24px; }
+.hero-foot { margin-top: auto; padding-top: 24px; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 24px; align-items: end; }
+.hero-inset { margin: 0 0 0 calc(-1 * clamp(56px, 9vw, 150px)); }
+.hero-inset img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: var(--radius); outline: 8px solid var(--turf-deep); }
+.rating { font: 400 .8rem/1.5 var(--f-mono); letter-spacing: .04em; color: var(--muted); }
+.rating strong { display: block; font: 600 2rem/1 var(--f-display); letter-spacing: -.03em; color: var(--fg); margin-bottom: 6px; }
+.star { color: var(--accent); }
+@media (max-width: 860px) {
+  .hero { grid-template-columns: 1fr; }
+  .hero-photo { min-height: 0; aspect-ratio: 4 / 3; }
+  .hero-inset { margin: 0; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .rise { animation: rise .8s cubic-bezier(.2, .7, .2, 1) both; }
+  .rise.d1 { animation-delay: .08s; } .rise.d2 { animation-delay: .16s; } .rise.d3 { animation-delay: .24s; }
+  @keyframes rise { from { opacity: .001; transform: translateY(14px); } }
+}
+
+/* Cleanups */
+.section-head { display: grid; gap: 18px; margin-bottom: clamp(36px, 5vw, 64px); }
+.cleanup-grid { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: clamp(32px, 5vw, 72px); align-items: start; }
+@media (max-width: 860px) { .cleanup-grid { grid-template-columns: 1fr; } }
+.tabs { display: flex; gap: 22px; margin-bottom: 16px; }
+.tab { all: unset; cursor: pointer; font: 600 .95rem/1.2 var(--f-body); padding-bottom: 6px; border-bottom: 1.5px solid transparent; opacity: .7; }
+.tab[aria-selected="true"] { border-color: currentColor; opacity: 1; }
+.tab:focus-visible { outline: 2px solid var(--focus); outline-offset: 4px; }
+.compare { --pos: 50%; position: relative; aspect-ratio: 1; max-width: 100%; border-radius: var(--radius); overflow: hidden; background: var(--turf-deep); touch-action: pan-y; }
+.compare img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.compare .before { clip-path: inset(0 calc(100% - var(--pos)) 0 0); }
+.compare .divider { position: absolute; top: 0; bottom: 0; left: var(--pos); width: 2px; margin-left: -1px; background: var(--cream); pointer-events: none; }
+.compare .knob { position: absolute; top: 50%; left: var(--pos); width: 52px; height: 52px; margin: -26px 0 0 -26px; border-radius: 50%; border: 2px solid var(--cream); background: rgb(29 40 32 / .35); backdrop-filter: blur(4px); display: grid; place-items: center; color: var(--cream); pointer-events: none; font: 500 .9rem var(--f-mono); }
+.compare .tag { position: absolute; top: 16px; padding: 6px 12px; border-radius: 999px; background: rgb(29 40 32 / .72); color: var(--cream); font: 500 .7rem/1 var(--f-mono); letter-spacing: .08em; text-transform: uppercase; pointer-events: none; }
+.compare .tag.b { left: 16px; } .compare .tag.a { right: 16px; }
+.compare input[type=range] { position: absolute; inset: 0; width: 100%; height: 100%; margin: 0; opacity: 0; cursor: ew-resize; }
+.compare:has(input:focus-visible) .knob { outline: 2px solid var(--cream); outline-offset: 4px; }
+.compare-note { margin-top: 12px; font: 400 .78rem/1.4 var(--f-mono); color: var(--muted); }
+.cleanup-copy { display: grid; gap: 36px; }
+.lead { font-size: clamp(1.1rem, 1.6vw, 1.3rem); line-height: 1.5; max-width: 32ch; }
+.list-label { font: 500 .74rem/1.4 var(--f-mono); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin-bottom: 10px; }
+.rule-list li { padding: 13px 0; border-top: 1px solid var(--line); }
+.rule-list li:last-child { border-bottom: 1px solid var(--line); }
+.pull { margin: 0; display: grid; gap: 14px; }
+.pull p { font: 500 clamp(1.35rem, 2.1vw, 1.7rem)/1.22 var(--f-display); letter-spacing: -.02em; }
+.pull footer, .review footer { font: 400 .76rem/1.4 var(--f-mono); letter-spacing: .04em; color: var(--muted); }
+
+/* Service levels */
+.tiers-top { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(32px, 5vw, 72px); align-items: end; margin-bottom: clamp(48px, 6vw, 80px); }
+.tiers-top img { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; border-radius: var(--radius); }
+@media (max-width: 860px) { .tiers-top { grid-template-columns: 1fr; } }
+.levels { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0 clamp(20px, 3vw, 40px); }
+.level { border-top: 1px solid var(--line); padding-top: 18px; display: grid; gap: 10px; align-content: start; }
+.level h3 { font-size: clamp(1.5rem, 2.4vw, 2rem); letter-spacing: -.03em; line-height: 1.05; }
+.level p { color: var(--muted); max-width: 30ch; }
+@media (max-width: 760px) { .levels { grid-template-columns: 1fr; gap: 28px; } }
+.matrix-wrap { margin-top: clamp(40px, 5vw, 64px); overflow-x: auto; }
+.matrix { width: 100%; border-collapse: collapse; font-size: .98rem; }
+.matrix th, .matrix td { padding: 15px 10px; border-bottom: 1px solid var(--line); text-align: center; vertical-align: middle; }
+.matrix thead th { font: 500 .72rem/1.3 var(--f-mono); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); border-bottom-color: var(--fg); }
+.matrix th:first-child, .matrix td:first-child { text-align: left; padding-left: 0; width: 46%; }
+.matrix tbody th { font-weight: 400; }
+.dot { display: inline-block; width: 12px; height: 12px; border-radius: 50%; background: var(--fg); }
+.dash { display: inline-block; width: 12px; height: 1.5px; background: var(--line); vertical-align: middle; }
+.facts { display: flex; flex-wrap: wrap; gap: 12px; margin-top: clamp(32px, 4vw, 48px); }
+.facts li { font: 500 .78rem/1 var(--f-mono); letter-spacing: .06em; text-transform: uppercase; padding: 10px 16px; border: 1px solid var(--line); border-radius: 999px; }
+
+/* Reviews */
+.reviews-grid { display: grid; grid-template-columns: minmax(0, 4fr) minmax(0, 8fr); gap: clamp(32px, 5vw, 80px); }
+@media (max-width: 900px) { .reviews-grid { grid-template-columns: 1fr; } }
+.score { display: grid; gap: 14px; align-content: start; }
+.score .big { font: 600 clamp(7rem, 17vw, 13rem)/.82 var(--f-display); letter-spacing: -.06em; font-variation-settings: "opsz" 96; }
+.score .big .star { font-size: .32em; vertical-align: .9em; margin-left: .06em; letter-spacing: 0; }
+.score p { font: 400 .82rem/1.5 var(--f-mono); letter-spacing: .03em; color: var(--muted); }
+.review-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 clamp(24px, 3vw, 48px); }
+.review { margin: 0; padding: 22px 0 26px; border-top: 1px solid var(--line); display: grid; gap: 14px; align-content: space-between; }
+.review p { font-size: 1.02rem; line-height: 1.55; }
+@media (max-width: 640px) { .review-list { grid-template-columns: 1fr; } }
+
+/* Area & hours */
+.area-grid { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: clamp(32px, 6vw, 96px); align-items: center; }
+@media (max-width: 860px) { .area-grid { grid-template-columns: 1fr; } }
+.arch { width: 100%; max-width: 440px; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 999px 999px var(--radius) var(--radius); }
+@media (max-width: 860px) { .arch { max-width: 300px; } }
+.towns { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 32px; margin-top: 22px; }
+.towns li { font: 500 clamp(1.6rem, 3.4vw, 2.7rem)/1.1 var(--f-display); letter-spacing: -.03em; padding: 14px 0; border-top: 1px solid var(--line); }
+@media (max-width: 480px) { .towns { grid-template-columns: 1fr; } }
+.hours { margin: 40px 0 0; display: grid; grid-template-columns: max-content 1fr; gap: 10px 32px; font-variant-numeric: tabular-nums; }
+.hours dt { font: 500 .78rem/1.6 var(--f-mono); letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+.hours dd { margin: 0; }
+.owner { margin-top: 24px; color: var(--muted); font-size: .95rem; }
+
+/* Quote form */
+.quote-grid { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: clamp(32px, 6vw, 96px); align-items: start; }
+@media (max-width: 900px) { .quote-grid { grid-template-columns: 1fr; } }
+.contact { display: grid; gap: 22px; margin-top: 32px; }
+.contact .phone { font: 600 clamp(1.8rem, 3.6vw, 2.6rem)/1 var(--f-display); letter-spacing: -.03em; text-decoration: none; font-variant-numeric: tabular-nums; }
+.contact .phone:hover { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: .15em; }
+form { display: grid; gap: 22px; }
+.row { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px; }
+@media (max-width: 560px) { .row { grid-template-columns: 1fr; } }
+.field { display: grid; gap: 8px; min-width: 0; }
+.field label, fieldset legend { font: 500 .74rem/1.3 var(--f-mono); letter-spacing: .07em; text-transform: uppercase; }
+.field label .opt { opacity: .6; text-transform: none; letter-spacing: 0; }
+input[type=text], input[type=tel], input[type=email], select, textarea {
+  width: 100%; font: 400 1rem/1.4 var(--f-body); color: var(--fg); background: rgb(238 240 227 / .28);
+  border: 1px solid var(--line); border-radius: 14px; padding: 13px 15px; appearance: none;
+}
+select { background-image: linear-gradient(45deg, transparent 50%, currentColor 50%), linear-gradient(135deg, currentColor 50%, transparent 50%); background-position: calc(100% - 20px) 55%, calc(100% - 15px) 55%; background-size: 5px 5px; background-repeat: no-repeat; padding-right: 40px; }
+textarea { min-height: 120px; resize: vertical; }
+input:focus-visible, select:focus-visible, textarea:focus-visible { outline: 2px solid var(--focus); outline-offset: 1px; border-radius: 14px; }
+[aria-invalid="true"] { border-color: var(--accent) !important; border-width: 1.5px; }
+.err { font-size: .86rem; color: #8f2219; min-height: 0; }
+.err:empty { display: none; }
+fieldset { border: 0; padding: 0; margin: 0; min-width: 0; }
+fieldset legend { margin-bottom: 10px; padding: 0; }
+.choices { display: flex; flex-wrap: wrap; gap: 10px; }
+.choice input { position: absolute; opacity: 0; pointer-events: none; }
+.choice span { display: inline-block; padding: 10px 16px; border: 1.5px solid var(--line); border-radius: 999px; cursor: pointer; font-size: .94rem; transition: border-color .15s, background-color .15s; }
+.choice input:checked + span { background: var(--mulch); color: var(--turf-lit); border-color: var(--mulch); }
+.choice input:focus-visible + span { outline: 2px solid var(--focus); outline-offset: 2px; }
+.choice span:hover { border-color: var(--fg); }
+.submit-row { display: flex; flex-wrap: wrap; align-items: center; gap: 16px 24px; }
+.status { font-size: .98rem; max-width: 46ch; padding: 16px 18px; border-radius: 14px; border: 1px solid var(--line); background: rgb(238 240 227 / .35); }
+.status:empty { display: none; }
+
+/* Footer */
+.site-footer { padding-block: clamp(56px, 8vw, 96px) 28px; }
+.foot-mark { font: 600 clamp(2rem, 5.4vw, 4.4rem)/1 var(--f-display); letter-spacing: -.04em; font-variation-settings: "opsz" 96; }
+.foot-cols { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px; margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--line); font-size: .95rem; }
+.foot-cols h3 { font: 500 .72rem/1.4 var(--f-mono); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin-bottom: 10px; }
+.foot-cols li { padding: 2px 0; }
+@media (max-width: 700px) { .foot-cols { grid-template-columns: 1fr; } }
+.credit { margin-top: 56px; font: 400 .72rem/1.5 var(--f-mono); letter-spacing: .03em; color: var(--muted); }
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","additionalType":"https://en.wikipedia.org/wiki/Landscaping","name":"Easy Lawn Care & Landscaping LLC","description":"Veteran owned and operated, offering no contract lawn care services throughout Snohomish County.","telephone":"+12069002537","email":"easylawnsllc@gmail.com","priceRange":"$$","image":"https://maneki-demos.pages.dev/easy-lawn-care/img/hero.jpg","url":"https://maneki-demos.pages.dev/easy-lawn-care/","address":{"@type":"PostalAddress","addressLocality":"Edmonds","addressRegion":"WA","postalCode":"98026","addressCountry":"US"},"areaServed":[{"@type":"City","name":"Everett, WA"},{"@type":"City","name":"Mill Creek, WA"},{"@type":"City","name":"Lake Stevens, WA"},{"@type":"City","name":"Mukilteo, WA"},{"@type":"City","name":"Bothell, WA"},{"@type":"City","name":"Bellevue, WA"}],"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"07:00","closes":"19:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Saturday","Sunday"],"opens":"08:00","closes":"19:00"}],"sameAs":["https://www.facebook.com/EasyLawnCare.biz/","https://www.yelp.com/biz/easy-lawn-care-and-landscaping-everet"],"hasOfferCatalog":{"@type":"OfferCatalog","name":"Lawn care service levels","itemListElement":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"Basic","description":"Lawn mowing, edging and blowing off property."}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Lawn & Garden","description":"In addition to basic services, flower beds kept weed free by manual or chemical methods."}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Complete","description":"In addition to lawn & garden services, trimming and pruning of hedges, plants and trees."}}]}}</script>
+</head>
+<body>
+
+<a class="sr-only" href="#main">Skip to content</a>
+<header class="site-header on-dark">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Easy Lawn Care &amp; Landscaping home"><b>Easy Lawn Care</b> <span>&amp; Landscaping</span></a>
+    <nav class="nav" aria-label="Sections">
+      <a href="#cleanups">Cleanups</a><a href="#service">Service levels</a><a href="#reviews">Reviews</a><a href="#area">Area &amp; hours</a>
+    </nav>
+    <a class="pill" href="#quote">Free estimate</a>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" id="top" aria-labelledby="hero-title">
+    <div class="hero-photo">
+      <img src="img/hero.jpg" width="1400" height="1394" alt="Freshly striped front lawn beside red azaleas, with the Easy Lawn Care trailer parked at the curb" fetchpriority="high">
+    </div>
+    <div class="hero-panel bg-deep on-dark">
+      <p class="meta rise"><span>Veteran owned</span><span>Snohomish County, WA</span></p>
+      <h1 id="hero-title" class="rise d1">One time cleanup or year round service.</h1>
+      <p class="hero-body rise d2">Veteran owned and operated, offering no contract lawn care services throughout Snohomish County.</p>
+      <div class="hero-ctas rise d3">
+        <a class="pill" href="#quote">Get a free estimate <span class="arrow" aria-hidden="true">→</span></a>
+        <span>Call or text <a class="textlink" href="tel:+12069002537">(206) 900-2537</a></span>
+      </div>
+      <div class="hero-foot">
+        <figure class="hero-inset"><img src="img/mower.jpg" width="1200" height="900" alt="Zero-turn mower on a striped lawn bordered by flower beds" loading="lazy"></figure>
+        <p class="rating"><strong>4.7<span class="star" aria-hidden="true">★</span></strong>42 Google reviews<br>100% recommend · 10 Facebook reviews</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="band bg-lit on-light" id="cleanups" aria-labelledby="cleanups-title">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="meta"><span>Cleanups</span><span>Spring &amp; fall</span></p>
+        <h2 class="h2" id="cleanups-title">Spring &amp; fall cleanups.</h2>
+      </div>
+      <div class="cleanup-grid">
+        <div>
+          <div class="tabs" role="tablist" aria-label="Cleanup jobs">
+            <button class="tab" role="tab" id="tab-0" aria-selected="true" aria-controls="compare" data-job="0">Front beds</button><button class="tab" role="tab" id="tab-1" aria-selected="false" aria-controls="compare" data-job="1">Birch bed</button>
+          </div>
+          <div class="compare" id="compare" role="tabpanel" aria-labelledby="tab-0">
+            <img class="after" src="img/after-house.jpg" width="1080" height="1080" alt="After: the same rhododendrons with fresh mulch beds, a birch ringed in mulch, and a striped lawn" loading="lazy">
+            <img class="before" src="img/before-house.jpg" width="1080" height="1080" alt="Before: leaves and debris under overgrown rhododendrons in front of a gray house" loading="lazy">
+            <span class="tag b">Before</span><span class="tag a">After</span>
+            <span class="divider" aria-hidden="true"></span><span class="knob" aria-hidden="true">⟷</span>
+            <input type="range" id="compare-range" min="0" max="100" value="50" aria-label="Slide to compare before and after">
+          </div>
+          <p class="compare-note">Drag to compare · photos from their Facebook page</p>
+        </div>
+        <div class="cleanup-copy">
+          <p class="lead">If you need someone for a one time cleanup or year round service contact us for a free estimate.</p>
+          <div>
+            <h3 class="list-label">What customers hire them for</h3>
+            <ul class="rule-list"><li>Edging sidewalks and driveways</li><li>Trimming trees, bushes and ornamental grasses</li><li>Removing dead and overgrown shrubs</li><li>Clearing blackberry brambles and weeds</li><li>Cleaning up and mulching flower beds</li><li>Pruning overgrown rhododendrons</li><li>Gutter clean out and power washing</li></ul>
+          </div>
+          <blockquote class="pull">
+            <p>“Coming home from work each day and seeing the progress made me feel like I lived in a whole new house.”</p>
+            <footer>Steve S. · Yard cleanup</footer>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band bg-deep on-dark" id="service" aria-labelledby="service-title">
+    <div class="wrap">
+      <div class="tiers-top">
+        <div class="section-head" style="margin:0">
+          <p class="meta"><span>Year-round maintenance</span><span>No contracts</span></p>
+          <h2 class="h2" id="service-title">Service on 3 different levels.</h2>
+        </div>
+        <img src="img/curve.jpg" width="960" height="638" alt="A curving striped lawn edged against a planted border" loading="lazy">
+      </div>
+      <div class="levels">
+        <div class="level"><h3>Basic</h3><p>Lawn mowing, edging and blowing off property.</p></div><div class="level"><h3>Lawn &amp; Garden</h3><p>In addition to basic services, flower beds kept weed free by manual or chemical methods.</p></div><div class="level"><h3>Complete</h3><p>In addition to lawn &amp; garden services, trimming and pruning of hedges, plants and trees.</p></div>
+      </div>
+      <div class="matrix-wrap">
+        <table class="matrix">
+          <caption class="sr-only">What each service level includes</caption>
+          <thead><tr><th scope="col">Included</th><th scope="col">Basic</th><th scope="col">Lawn &amp; Garden</th><th scope="col">Complete</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Lawn mowing</th><td><span class="dot" role="img" aria-label="Included"></span></td><td><span class="dot" role="img" aria-label="Included"></span></td><td><span class="dot" role="img" aria-label="Included"></span></td></tr><tr><th scope="row">Edging</th><td><span class="dot" role="img" aria-label="Included"></span></td><td><span class="dot" role="img" aria-label="Included"></span></td><td><span class="dot" role="img" aria-label="Included"></span></td></tr><tr><th scope="row">Blowing off property</th><td><span class="dot" role="img" aria-label="Included"></span></td><td><span class="dot" role="img" aria-label="Included"></span></td><td><span class="dot" role="img" aria-label="Included"></span></td></tr><tr><th scope="row">Flower beds kept weed free</th><td><span class="dash" role="img" aria-label="Not included"></span></td><td><span class="dot" role="img" aria-label="Included"></span></td><td><span class="dot" role="img" aria-label="Included"></span></td></tr><tr><th scope="row">Trimming &amp; pruning hedges, plants and trees</th><td><span class="dash" role="img" aria-label="Not included"></span></td><td><span class="dash" role="img" aria-label="Not included"></span></td><td><span class="dot" role="img" aria-label="Included"></span></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <ul class="facts"><li>Commercial &amp; residential</li><li>One time or year round</li><li>No contracts</li><li>Free estimates</li></ul>
+    </div>
+  </section>
+
+  <section class="band bg-sky on-light" id="reviews" aria-labelledby="reviews-title">
+    <div class="wrap reviews-grid">
+      <div class="score">
+        <h2 class="sr-only" id="reviews-title">Reviews</h2>
+        <p class="meta"><span>Reviews</span></p>
+        <div class="big">4.7<span class="star" aria-hidden="true">★</span></div>
+        <p>42 Google reviews<br>100% recommend · 10 Facebook reviews</p>
+        <a class="textlink" href="https://www.google.com/search?q=easy+lawncare+and+landscaping+llc" target="_blank" rel="noopener">Read them on Google <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="review-list">
+        <blockquote class="review"><p>“Their work is meticulous, even sending reminder messages in advance so you can change routine if you need to. Trimming is precise, mowing patterns varied.”</p><footer>Dennis K. · Lawn mowing &amp; maintenance</footer></blockquote><blockquote class="review"><p>“Carlos was excellent to work with. He was professional, timely, efficient and communicative.”</p><footer>Shawn S. · Yard work</footer></blockquote><blockquote class="review"><p>“They did a full yard clean up with trimming bushes, mow, roof and gutter clean out and power washing my mossy driveway.”</p><footer>Julie S. · Full yard cleanup</footer></blockquote><blockquote class="review"><p>“Was able to get me a quote the next day, and they could fit me in that night because they were in the neighborhood.”</p><footer>Emma R. · Estimate</footer></blockquote><blockquote class="review"><p>“They stayed well after sunset to finish the work. They did a thorough job, and also had the best price out of the three I got quotes from.”</p><footer>T. G. · Yard work</footer></blockquote><blockquote class="review"><p>“Carlos and his team have helped me out with my yard multiple times. Once trimming overgrown rhododendron bushes and another doing a fall cleanup.”</p><footer>Spencer S. · Fall cleanup</footer></blockquote>
+      </div>
+    </div>
+  </section>
+
+  <section class="band bg-fir on-dark" id="area" aria-labelledby="area-title">
+    <div class="wrap area-grid">
+      <img class="arch" src="img/stripes-house.jpg" width="540" height="720" alt="Wavy mowing stripes leading up to a gray two-story house" loading="lazy">
+      <div>
+        <p class="meta"><span>Service area</span><span>Snohomish County, WA</span></p>
+        <h2 class="sr-only" id="area-title">Service area and hours</h2>
+        <ul class="towns"><li>Everett</li><li>Mill Creek</li><li>Lake Stevens</li><li>Mukilteo</li><li>Bothell</li><li>Bellevue</li></ul>
+        <dl class="hours">
+          <dt>Mon – Fri</dt><dd>7:00 AM – 7:00 PM</dd><dt>Sat – Sun</dt><dd>8:00 AM – 7:00 PM</dd>
+        </dl>
+        <p class="owner">Owned by Alex. Veteran owned and operated.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="band bg-lit on-light" id="quote" aria-labelledby="quote-title">
+    <div class="wrap quote-grid">
+      <div>
+        <p class="meta"><span>Free estimates</span></p>
+        <h2 class="h2" id="quote-title" style="margin-top:18px">Tell us about the yard.</h2>
+        <div class="contact">
+          <p class="lead">Please call or text (206) 900-2537 to schedule a free estimate.</p>
+          <a class="phone" href="tel:+12069002537">(206) 900-2537</a>
+          <p><a class="textlink" href="mailto:easylawnsllc@gmail.com">easylawnsllc@gmail.com</a></p>
+        </div>
+      </div>
+      <form id="quote-form" novalidate >
+        <div class="row">
+          <div class="field"><label for="f-name">Name</label><input type="text" id="f-name" name="name" autocomplete="name" required><p class="err" id="e-name"></p></div>
+          <div class="field"><label for="f-phone">Phone</label><input type="tel" id="f-phone" name="phone" autocomplete="tel" inputmode="tel" required><p class="err" id="e-phone"></p></div>
+        </div>
+        <div class="row">
+          <div class="field"><label for="f-email">Email <span class="opt">(optional)</span></label><input type="email" id="f-email" name="email" autocomplete="email"><p class="err" id="e-email"></p></div>
+          <div class="field"><label for="f-city">City</label>
+            <select id="f-city" name="city" required><option value="">Choose a city</option><option>Everett</option><option>Mill Creek</option><option>Lake Stevens</option><option>Mukilteo</option><option>Bothell</option><option>Bellevue</option><option>Somewhere else</option></select><p class="err" id="e-city"></p></div>
+        </div>
+        <div class="field"><label for="f-address">Street address</label><input type="text" id="f-address" name="address" autocomplete="street-address" required><p class="err" id="e-address"></p></div>
+        <fieldset aria-describedby="e-service">
+          <legend>What do you need?</legend>
+          <div class="choices"><label class="choice"><input type="radio" name="service" id="f-service-0" value="One-time cleanup" required><span>One-time cleanup</span></label><label class="choice"><input type="radio" name="service" id="f-service-1" value="Basic" required><span>Basic</span></label><label class="choice"><input type="radio" name="service" id="f-service-2" value="Lawn &amp; Garden" required><span>Lawn &amp; Garden</span></label><label class="choice"><input type="radio" name="service" id="f-service-3" value="Complete" required><span>Complete</span></label><label class="choice"><input type="radio" name="service" id="f-service-4" value="Not sure yet" required><span>Not sure yet</span></label></div>
+          <p class="err" id="e-service"></p>
+        </fieldset>
+        <div class="row">
+          <fieldset>
+            <legend>Best way to reach you</legend>
+            <div class="choices"><label class="choice"><input type="radio" name="contact" id="f-contact-0" value="Call" ><span>Call</span></label><label class="choice"><input type="radio" name="contact" id="f-contact-1" value="Text" checked><span>Text</span></label><label class="choice"><input type="radio" name="contact" id="f-contact-2" value="Email" ><span>Email</span></label></div>
+          </fieldset>
+          <div class="field"><label for="f-when">Best time for a walk-through</label>
+            <select id="f-when" name="when"><option>Weekday morning</option><option>Weekday afternoon</option><option>Weekday evening</option><option>Weekend</option><option>Any time</option></select></div>
+        </div>
+        <div class="field"><label for="f-notes">Anything we should know? <span class="opt">(optional)</span></label><textarea id="f-notes" name="notes" placeholder="Blackberries along the back fence, beds need mulch, gate code…"></textarea></div>
+        <div class="submit-row">
+          <button class="pill" type="submit">Send request <span class="arrow" aria-hidden="true">→</span></button>
+          <span class="rating" style="font-size:.78rem">Free estimates · No contracts</span>
+        </div>
+        <p class="status" id="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer bg-fir on-dark">
+  <div class="wrap">
+    <p class="foot-mark">Easy Lawn Care &amp; Landscaping LLC</p>
+    <div class="foot-cols">
+      <div><h3>Contact</h3><ul><li><a class="textlink" href="tel:+12069002537">(206) 900-2537</a></li><li><a class="textlink" href="mailto:easylawnsllc@gmail.com">easylawnsllc@gmail.com</a></li><li>Snohomish County, WA</li></ul></div>
+      <div><h3>Hours</h3><ul><li>Mon – Fri · 7:00 AM – 7:00 PM</li><li>Sat – Sun · 8:00 AM – 7:00 PM</li></ul></div>
+      <div><h3>Elsewhere</h3><ul><li><a class="textlink" href="https://www.facebook.com/EasyLawnCare.biz/" target="_blank" rel="noopener">Facebook</a></li><li><a class="textlink" href="https://www.google.com/search?q=easy+lawncare+and+landscaping+llc" target="_blank" rel="noopener">Google</a></li><li><a class="textlink" href="https://www.yelp.com/biz/easy-lawn-care-and-landscaping-everet" target="_blank" rel="noopener">Yelp</a></li></ul></div>
+    </div>
+    <p class="credit">Speculative redesign concept by Maneki Studio · Not affiliated with Easy Lawn Care &amp; Landscaping LLC</p>
+  </div>
+</footer>
+
+<script>
+(() => {
+  const JOBS = [{"label":"Front beds","before":{"src":"img/before-house.jpg","alt":"Before: leaves and debris under overgrown rhododendrons in front of a gray house"},"after":{"src":"img/after-house.jpg","alt":"After: the same rhododendrons with fresh mulch beds, a birch ringed in mulch, and a striped lawn"}},{"label":"Birch bed","before":{"src":"img/before-birch.jpg","alt":"Before: a tangled, unedged bed around a multi-trunk birch"},"after":{"src":"img/after-birch.jpg","alt":"After: the birch bed cleared, reshaped with a curved edge, mulched and lined with boulders"}}];
+  const ENDPOINT = "";
+  const PHONE = "(206) 900-2537";
+
+  // Before / after compare
+  const box = document.getElementById("compare");
+  const range = document.getElementById("compare-range");
+  const setPos = (v) => box.style.setProperty("--pos", v + "%");
+  range.addEventListener("input", () => setPos(range.value));
+  document.querySelectorAll(".tab").forEach((tab) => {
+    tab.addEventListener("click", () => {
+      const j = JOBS[+tab.dataset.job];
+      document.querySelectorAll(".tab").forEach((t) => t.setAttribute("aria-selected", String(t === tab)));
+      box.setAttribute("aria-labelledby", tab.id);
+      const a = box.querySelector(".after"), b = box.querySelector(".before");
+      a.src = j.after.src; a.alt = j.after.alt; b.src = j.before.src; b.alt = j.before.alt;
+      range.value = 50; setPos(50);
+    });
+    tab.addEventListener("keydown", (e) => {
+      if (e.key !== "ArrowRight" && e.key !== "ArrowLeft") return;
+      const tabs = [...document.querySelectorAll(".tab")];
+      const next = tabs[(tabs.indexOf(tab) + (e.key === "ArrowRight" ? 1 : tabs.length - 1)) % tabs.length];
+      next.focus(); next.click();
+    });
+  });
+  // One gentle nudge so people see the slider moves
+  if (!matchMedia("(prefers-reduced-motion: reduce)").matches && "IntersectionObserver" in window) {
+    const io = new IntersectionObserver((entries) => {
+      if (!entries[0].isIntersecting) return;
+      io.disconnect();
+      const t0 = performance.now();
+      const step = (t) => {
+        const p = Math.min(1, (t - t0) / 1400);
+        const v = 50 - 18 * Math.sin(p * Math.PI);
+        if (p < 1) { setPos(v.toFixed(1)); requestAnimationFrame(step); } else setPos(range.value);
+      };
+      requestAnimationFrame(step);
+    }, { threshold: 0.6 });
+    io.observe(box);
+  }
+
+  // Quote form
+  const form = document.getElementById("quote-form");
+  const status = document.getElementById("form-status");
+  const checks = [
+    ["f-name", "e-name", (el) => el.value.trim() ? "" : "Add your name so the crew knows who to ask for."],
+    ["f-phone", "e-phone", (el) => el.value.replace(/\D/g, "").length >= 10 ? "" : "Enter a 10-digit phone number."],
+    ["f-email", "e-email", (el) => !el.value || /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(el.value) ? "" : "That email looks incomplete."],
+    ["f-city", "e-city", (el) => el.value ? "" : "Choose the city the yard is in."],
+    ["f-address", "e-address", (el) => el.value.trim() ? "" : "Add the street address for the walk-through."],
+  ];
+  const validate = () => {
+    let first = null;
+    for (const [id, eid, fn] of checks) {
+      const el = document.getElementById(id), msg = fn(el);
+      document.getElementById(eid).textContent = msg;
+      el.setAttribute("aria-invalid", msg ? "true" : "false");
+      if (msg) el.setAttribute("aria-describedby", eid); else el.removeAttribute("aria-describedby");
+      if (msg && !first) first = el;
+    }
+    const svc = form.querySelector('input[name="service"]:checked');
+    document.getElementById("e-service").textContent = svc ? "" : "Pick the closest option, or Not sure yet.";
+    if (!svc && !first) first = form.querySelector('input[name="service"]');
+    return first;
+  };
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    status.textContent = "";
+    const first = validate();
+    if (first) { first.focus(); return; }
+    if (!ENDPOINT) {
+      status.textContent = "This page is a design concept, so the request wasn’t sent. To reach Easy Lawn Care today, call or text " + PHONE + ".";
+      return;
+    }
+    const btn = form.querySelector('button[type="submit"]');
+    btn.disabled = true;
+    try {
+      const res = await fetch(ENDPOINT, { method: "POST", body: new FormData(form), headers: { Accept: "application/json" } });
+      if (!res.ok) throw new Error();
+      form.reset();
+      status.textContent = "Request sent. Expect a call or text to set up a time for your free estimate.";
+    } catch {
+      status.textContent = "Your request didn’t go through. Please call or text " + PHONE + " instead.";
+    } finally { btn.disabled = false; }
+  });
+})();
+</script>
+</body>
+</html>
