@@ -14,9 +14,9 @@
 <meta property="og:url" content="https://maneki-demos.pages.dev/easy-lawn-care/">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2032%2032%22%3E%3Crect%20width%3D%2232%22%20height%3D%2232%22%20rx%3D%2216%22%20fill%3D%22%232f3d22%22%2F%3E%3Cpath%20d%3D%22M8%208h4v16H8zM16%208h4v16h-4z%22%20fill%3D%22%23aab96d%22%2F%3E%3C%2Fsvg%3E">
-<link rel="preload" href="fonts/bricolage.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/inter-tight.woff2" as="font" type="font/woff2" crossorigin>
 <style>
-@font-face { font-family: "Bricolage Grotesque"; src: url(fonts/bricolage.woff2) format("woff2"); font-weight: 200 800; font-display: swap; }
+@font-face { font-family: "Inter Tight"; src: url(fonts/inter-tight.woff2) format("woff2"); font-weight: 100 900; font-display: swap; }
 @font-face { font-family: "Figtree"; src: url(fonts/figtree.woff2) format("woff2"); font-weight: 300 900; font-display: swap; }
 @font-face { font-family: "DM Mono"; src: url(fonts/dm-mono-400.woff2) format("woff2"); font-weight: 400; font-display: swap; }
 @font-face { font-family: "DM Mono"; src: url(fonts/dm-mono-500.woff2) format("woff2"); font-weight: 500; font-display: swap; }
@@ -36,7 +36,7 @@
   --cream: #eef0e3;       /* text on dark */
   --accent: #c8372a;      /* red azalea, used sparingly */
 
-  --f-display: "Bricolage Grotesque", "Avenir Next", "Segoe UI", system-ui, sans-serif;
+  --f-display: "Inter Tight", "Helvetica Neue", Helvetica, "Avenir Next", "Segoe UI", system-ui, sans-serif;
   --f-body: "Figtree", "Avenir Next", "Segoe UI", system-ui, sans-serif;
   --f-mono: "DM Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
 
@@ -77,7 +77,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 
 .meta { font: 500 .74rem/1.4 var(--f-mono); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); display: flex; flex-wrap: wrap; gap: .4em 1.4em; }
 .meta span + span::before { content: ""; display: inline-block; width: 6px; height: 6px; border-radius: 50%; background: var(--accent); margin-right: 1.4em; vertical-align: .12em; }
-.h2 { font-size: clamp(2.4rem, 6.2vw, 5.4rem); line-height: .98; letter-spacing: -.035em; font-variation-settings: "opsz" 96; }
+.h2 { font-size: clamp(2.4rem, 6.2vw, 5.4rem); line-height: .98; letter-spacing: -.025em; }
 
 /* Buttons */
 .pill {
@@ -119,7 +119,7 @@ ul { margin: 0; padding: 0; list-style: none; }
   /* mowing stripes: flat alternating bands, no blending */
   background-image: repeating-linear-gradient(90deg, transparent 0 92px, rgb(255 255 255 / .03) 92px 184px);
 }
-.hero h1 { font-size: clamp(2.6rem, 5vw, 4.8rem); line-height: .98; letter-spacing: -.04em; font-variation-settings: "opsz" 96; max-width: 11ch; }
+.hero h1 { font-size: clamp(2.6rem, 5vw, 4.8rem); line-height: .98; letter-spacing: -.025em; max-width: 11ch; }
 .hero-body { max-width: 34ch; font-size: 1.06rem; color: var(--muted); }
 .hero-ctas { display: flex; flex-wrap: wrap; align-items: center; gap: 14px 24px; }
 .hero-foot { margin-top: auto; padding-top: 24px; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 24px; align-items: end; }
@@ -190,7 +190,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 .reviews-grid { display: grid; grid-template-columns: minmax(0, 4fr) minmax(0, 8fr); gap: clamp(32px, 5vw, 80px); }
 @media (max-width: 900px) { .reviews-grid { grid-template-columns: 1fr; } }
 .score { display: grid; gap: 14px; align-content: start; }
-.score .big { font: 600 clamp(7rem, 17vw, 13rem)/.82 var(--f-display); letter-spacing: -.06em; font-variation-settings: "opsz" 96; }
+.score .big { font: 600 clamp(7rem, 17vw, 13rem)/.82 var(--f-display); letter-spacing: -.035em; }
 .score .big .star { font-size: .32em; vertical-align: .9em; margin-left: .06em; letter-spacing: 0; }
 .score p { font: 400 .82rem/1.5 var(--f-mono); letter-spacing: .03em; color: var(--muted); }
 .review-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 clamp(24px, 3vw, 48px); }
@@ -247,7 +247,7 @@ fieldset legend { margin-bottom: 10px; padding: 0; }
 
 /* Footer */
 .site-footer { padding-block: clamp(56px, 8vw, 96px) 28px; }
-.foot-mark { font: 600 clamp(2rem, 5.4vw, 4.4rem)/1 var(--f-display); letter-spacing: -.04em; font-variation-settings: "opsz" 96; }
+.foot-mark { font: 600 clamp(2rem, 5.4vw, 4.4rem)/1 var(--f-display); letter-spacing: -.025em; }
 .foot-cols { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px; margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--line); font-size: .95rem; }
 .foot-cols h3 { font: 500 .72rem/1.4 var(--f-mono); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin-bottom: 10px; }
 .foot-cols li { padding: 2px 0; }
